@@ -39,8 +39,13 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 6. Create symlinks in the Home Directory
 
 ```shell
+# Link to .zshrc file
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
+
+# Link to .gitconfig Globals
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+
+# Link to Remotes main settings for VScode
 ln -s ~/.dotfiles/.vscode/settings.json ~/.vscode-server/data/Machine/settings.json
 ```
 
