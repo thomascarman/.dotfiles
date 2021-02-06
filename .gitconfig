@@ -1,6 +1,7 @@
 [core]
 	filemode = false
 	autocrlf = true
+	editor = code --wait
 [user]
 	name = Thomas Carman
 	email = thomascarman@users.noreply.github.com
@@ -23,8 +24,8 @@
     ds = diff --stat
     dc = diff --cached
 
-    s = status
-    st = status -s
+    s = status -s
+    st = status
     co = checkout
     cob = checkout -b
     # list branches sorted by last modified

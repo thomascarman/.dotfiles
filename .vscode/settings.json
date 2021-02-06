@@ -1,0 +1,21 @@
+{
+  "files.exclude": {
+    "**/.git": true
+  },
+  "liveServer.settings.host": "localhost",
+  "liveServer.settings.port": 8080,
+  "liveServer.settings.proxy": {
+    "enable": true,
+    "baseUri": "/api",
+    "proxyUri": "http://localhost:3000/api"
+  },
+  "liveServer.settings.NoBrowser": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/public/dist/style/"
+    }
+  ],
+  "editor.formatOnSave": true
+}

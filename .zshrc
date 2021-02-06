@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm brew)
+plugins=(git nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,6 +87,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.nvm/nvm.sh
 export PATH="$HOME/.deno/bin:$PATH"
 export PATH="$HOME/.oh-my-zsh\plugins\brew:$PATH"
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 export BROWSER="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
 
 # You may need to manually set your language environment
