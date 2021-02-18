@@ -109,7 +109,9 @@ export BROWSER="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
+alias fire="cacafire"
+alias starwars="telnet towel.blinkenlights.nl"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
