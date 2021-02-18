@@ -88,7 +88,7 @@ source ~/.nvm/nvm.sh
 export PATH="$HOME/.deno/bin:$PATH"
 export PATH="$HOME/.oh-my-zsh\plugins\brew:$PATH"
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-export BROWSER="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
+export BROWSER="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
