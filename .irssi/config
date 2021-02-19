@@ -303,4 +303,5 @@ statusbar = {
 settings = {
   core = { real_name = ""; user_name = "kiknas"; nick = "kiknas"; };
   "fe-text" = { actlist_sort = "refnum"; };
+  "fe-common/core" = { theme = "envy"; };
 };

@@ -112,6 +112,7 @@ fi
 alias zshconfig="vim ~/.zshrc"
 alias fire="cacafire"
 alias starwars="telnet towel.blinkenlights.nl"
+alias chat="irssi"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
