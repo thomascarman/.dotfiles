@@ -48,8 +48,9 @@ nvm install 0.0.0
 7. Create symlinks in the Home Directory
 
 ```shell
-# Link to .zshrc file
+# Link to .zshrc & .vimrc file
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/.vimrc ~/.vimrc
 
 # Link to .gitconfig Globals
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
