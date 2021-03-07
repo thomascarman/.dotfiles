@@ -49,7 +49,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
@@ -89,6 +89,8 @@ export PATH="$HOME/.deno/bin:$PATH"
 export PATH="$HOME/.oh-my-zsh\plugins\brew:$PATH"
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 export BROWSER="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+export LIBGL_ALWAYS_INDIRECT=true
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -110,6 +112,7 @@ fi
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
+alias vimconfig="vim ~/.vimrc"
 alias fire="cacafire"
 alias starwars="telnet towel.blinkenlights.nl"
 alias chat="irssi"
