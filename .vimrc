@@ -17,6 +17,7 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
+autocmd InsertEnter,InsertLeave * set cul!
 
 set splitbelow splitright
 
@@ -38,6 +39,8 @@ Plug 'vim-utils/vim-man'
 Plug 'lyuts/vim-rtags'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'mbbill/undotree'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
+Plug 'sheerun/vim-polyglot'
 
 if has('nvim')
     Plug 'nvim-lua/popup.nvim'
@@ -80,10 +83,10 @@ nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <silent> <leader>gd :YcmCompleter GoTo<CR>
 nnoremap <silent> <leader>gf :YcmCompleter FixIt<CR>
 
-nnoremap <silent> <leader>tt :NERDTreeToggle<CR>
+nnoremap <silent> <leader>t :NERDTreeToggle<CR>
 
-nnoremap <leader>t :term ++close<CR>
-nnoremap <leader>T :tab term ++close<CR>
+" nnoremap <leader>t :term ++close<CR>
+" nnoremap <leader>T :tab term ++close<CR>
 
 nnoremap <C-l> :tabn<CR>
 nnoremap <C-h> :tabp<CR>
