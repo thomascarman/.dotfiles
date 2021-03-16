@@ -1,3 +1,7 @@
+" -----------------------------------------------------------------------------
+" Settings
+" -----------------------------------------------------------------------------
+
 syntax on
 
 set encoding=UTF-8
@@ -17,12 +21,21 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
-autocmd InsertEnter,InsertLeave * set cul!
-
 set splitbelow splitright
-
 set colorcolumn=80
+
+" -----------------------------------------------------------------------------
+" Auto Commands
+" -----------------------------------------------------------------------------
+
+autocmd InsertEnter,InsertLeave * set cul!
+autocmd BufNewFile,BufRead .prettierrc set ft=json
+
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+" -----------------------------------------------------------------------------
+" Plugins
+" -----------------------------------------------------------------------------
 
 call plug#begin('~/.vim/plugged')
 
@@ -49,6 +62,10 @@ if has('nvim')
 endif
 
 call plug#end()
+
+" -----------------------------------------------------------------------------
+" Plugins Settings
+" -----------------------------------------------------------------------------
 
 colorscheme gruvbox
 set background=dark
@@ -84,9 +101,6 @@ nnoremap <silent> <leader>gd :YcmCompleter GoTo<CR>
 nnoremap <silent> <leader>gf :YcmCompleter FixIt<CR>
 
 nnoremap <silent> <leader>t :NERDTreeToggle<CR>
-
-" nnoremap <leader>t :term ++close<CR>
-" nnoremap <leader>T :tab term ++close<CR>
 
 nnoremap <C-l> :tabn<CR>
 nnoremap <C-h> :tabp<CR>
