@@ -86,6 +86,10 @@ let g:prettier#autoformat = 1
 let g:prettier#quickfix_enabled = 0
 "let g:prettier#autoformat_config_present = 1
 
+" -----------------------------------------------------------------------------
+" Hotkeys
+" -----------------------------------------------------------------------------
+
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>l :wincmd l<CR>
@@ -102,9 +106,16 @@ nnoremap <silent> <leader>gf :YcmCompleter FixIt<CR>
 
 nnoremap <silent> <leader>t :NERDTreeToggle<CR>
 
-nnoremap <C-l> :tabn<CR>
-nnoremap <C-h> :tabp<CR>
+nnoremap <C-m> :tabn<CR>
+nnoremap <C-b> :tabp<CR>
 nnoremap <C-n> :tabnew<CR>
+
+nnoremap <C-j> :m+<CR>==
+nnoremap <C-k> :m-2<CR>==
+inoremap <C-j> <Esc>:m+<CR>==gi
+inoremap <C-k> <Esc>:m-2<CR>==gi
+vnoremap <C-j> :m'>+<CR>gv=gv
+vnoremap <C-k> :m-2<CR>gv=gv
 
 if has('nvim')
     " Find files using Telescope command-line sugar.
