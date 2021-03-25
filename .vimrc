@@ -30,6 +30,7 @@ set colorcolumn=80
 
 autocmd InsertEnter,InsertLeave * set cul!
 autocmd BufNewFile,BufRead .prettierrc set ft=json
+autocmd BufNewFile,BufRead .svelte set ft=html
 
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
@@ -47,6 +48,7 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-rhubarb'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-utils/vim-man'
 Plug 'lyuts/vim-rtags'
@@ -112,8 +114,8 @@ nnoremap <C-n> :tabnew<CR>
 
 nnoremap <C-j> :m+<CR>==
 nnoremap <C-k> :m-2<CR>==
-inoremap <C-j> <Esc>:m+<CR>==gi
 inoremap <C-k> <Esc>:m-2<CR>==gi
+inoremap <C-j> <Esc>:m+<CR>==gi
 vnoremap <C-j> :m'>+<CR>gv=gv
 vnoremap <C-k> :m-2<CR>gv=gv
 
