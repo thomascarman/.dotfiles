@@ -92,6 +92,8 @@ let g:prettier#quickfix_enabled = 0
 " Hotkeys
 " -----------------------------------------------------------------------------
 
+nnoremap <leader>vc :!code .<CR>
+
 nnoremap <leader>gs :Git<CR>
 nnoremap <leader>gl :Gclog<CR>
 nnoremap <leader>ga :Git add .<CR>
