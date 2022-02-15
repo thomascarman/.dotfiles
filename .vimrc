@@ -92,6 +92,15 @@ let g:prettier#quickfix_enabled = 0
 " Hotkeys
 " -----------------------------------------------------------------------------
 
+nnoremap <leader>gs :Git<CR>
+nnoremap <leader>gl :Gclog<CR>
+nnoremap <leader>ga :Git add .<CR>
+nnoremap <leader>gp :Git add --patch .<CR>
+nnoremap <leader>gd :Gdiffsplit<CR>
+
+nnoremap <leader>sx :split<CR>
+nnoremap <leader>sy :vsplit<CR>
+
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>l :wincmd l<CR>
@@ -103,14 +112,15 @@ nnoremap <leader>p :Prettier<CR>
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 
-nnoremap <silent> <leader>gd :YcmCompleter GoTo<CR>
-nnoremap <silent> <leader>gf :YcmCompleter FixIt<CR>
+nnoremap <silent> <leader>cd :YcmCompleter GoTo<CR>
+nnoremap <silent> <leader>cf :YcmCompleter FixIt<CR>
 
 nnoremap <silent> <leader>t :NERDTreeToggle<CR>
 
 nnoremap <C-m> :tabn<CR>
 nnoremap <C-b> :tabp<CR>
 nnoremap <C-n> :tabnew<CR>
+nnoremap <C-s> :wa<CR>
 
 nnoremap <C-j> :m+<CR>==
 nnoremap <C-k> :m-2<CR>==
