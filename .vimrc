@@ -45,6 +45,8 @@ Plug 'preservim/nerdtree' |
     \ Plug 'ryanoasis/vim-devicons'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'morhetz/gruvbox'
+    \ Plug 'vim-airline/vim-airline'
+    \ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-rhubarb'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
@@ -71,6 +73,7 @@ call plug#end()
 
 colorscheme gruvbox
 set background=dark
+let g:airline_theme='gruvbox'
 
 if executable('rg')
     let g:rg_derive_root='true'
