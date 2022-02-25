@@ -23,6 +23,7 @@ set undofile
 set incsearch
 set splitbelow splitright
 set colorcolumn=80
+set whichwrap=<,>,h,l
 
 " -----------------------------------------------------------------------------
 " Auto Commands
