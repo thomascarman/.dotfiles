@@ -153,7 +153,9 @@ nnoremap <silent> <leader>, :resize -5<CR>
 nnoremap <silent> <leader>cd :YcmCompleter GoTo<CR>
 nnoremap <silent> <leader>cf :YcmCompleter FixIt<CR>
 
-nnoremap <silent> <leader>t :NERDTreeToggle<CR>
+nnoremap <silent> <leader>to :NERDTreeMirror<CR>:NERDTreeFocus<CR>
+nnoremap <silent> <leader>tt :NERDTreeToggle<CR>
+nnoremap <silent> <leader>tf :NERDTreeFind<CR>
 
 nnoremap <C-m> :tabn<CR>
 nnoremap <C-b> :tabp<CR>
