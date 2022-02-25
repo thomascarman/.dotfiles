@@ -90,7 +90,10 @@ let g:netrw_brose_split=2
 let g:netrw_banner=0
 let g:netrw_winsize=25
 let g:ctrlp_use_cashing=0
-let NERDTreeQuitOnOpen=1
+
+let NERDTreeQuitOnOpen=0
+let g:NERDTreeDirArrowExpandable=' ▸'
+let g:NERDTreeDirArrowCollapsible=' ▾'
 
 let g:prettier#autoformat = 1
 let g:prettier#quickfix_enabled = 0
