@@ -123,6 +123,9 @@ nmap <leader><leader>j <Plug>(easymotion-j)
 nmap <leader><leader>k <Plug>(easymotion-k)
 
 nnoremap <leader>vc :!code .<CR>
+nnoremap <leader>vt :term<SPACE>
+nnoremap <leader>vl :IndentLinesToggle<CR>
+nnoremap <leader>vf :term npm run format<CR>
 
 nnoremap <leader>gs :Git<CR>
 nnoremap <leader>gl :Gclog<CR>
