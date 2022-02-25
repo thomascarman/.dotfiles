@@ -60,6 +60,9 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'mbbill/undotree'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 Plug 'sheerun/vim-polyglot'
+Plug 'Yggdroot/indentLine'
+Plug 'easymotion/vim-easymotion'
+Plug 'kshenoy/vim-signature'
 
 if has('nvim')
     Plug 'nvim-lua/popup.nvim'
