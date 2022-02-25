@@ -131,7 +131,7 @@ nnoremap <leader>gs :Git<CR>
 nnoremap <leader>gl :Gclog<CR>
 nnoremap <leader>ga :Git add .<CR>
 nnoremap <leader>gp :Git add --patch .<CR>
-nnoremap <leader>gd :Gdiffsplit<CR>
+nnoremap <leader>gd :Gvdiffsplit<CR>
 
 nnoremap <leader>sx :split<CR>
 nnoremap <leader>sy :vsplit<CR>
