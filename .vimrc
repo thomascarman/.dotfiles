@@ -78,7 +78,7 @@ call plug#end()
 
 colorscheme gruvbox
 set background=dark
-let g:airline_theme='gruvbox'
+let g:airline_theme='kolor'
 
 if executable('rg')
     let g:rg_derive_root='true'
