@@ -42,6 +42,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree' |
     \ Plug 'Xuyuanp/nerdtree-git-plugin' |
     \ Plug 'ryanoasis/vim-devicons'
