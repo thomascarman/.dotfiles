@@ -147,6 +147,8 @@ nnoremap <leader>p :Prettier<CR>
 
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
+nnoremap <silent> <leader>. :resize +5<CR>
+nnoremap <silent> <leader>, :resize -5<CR>
 
 nnoremap <silent> <leader>cd :YcmCompleter GoTo<CR>
 nnoremap <silent> <leader>cf :YcmCompleter FixIt<CR>
