@@ -28,6 +28,11 @@
     st = status
     co = checkout
     cob = checkout -b
+    
+    crs = reset --soft HEAD~1
+    cr = reset HEAD~1
+    crh = reset --hard HEAD~1
+    
     # list branches sorted by last modified
     b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
     # list aliases
