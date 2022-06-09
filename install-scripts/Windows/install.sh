@@ -1,3 +1,8 @@
+# ---
+# This file is a work in progress and not fully tested
+# Note: some scripts below have been just copied and pasted from instructions
+# ---
+
 log_file=~/install_progress_log.txt
 
 # ---
