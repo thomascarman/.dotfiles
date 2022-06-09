@@ -49,8 +49,8 @@ nvm install 0.0.0
 
 ```shell
 # Link to .zshrc file
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.vimrc ~/.vimrc
+ln -s ~/.dotfiles/zshrc ~/.zshrc
+ln -s ~/.dotfiles/vimrc ~/.vimrc
 
 # Link to .gitconfig Globals
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
