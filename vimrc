@@ -137,22 +137,7 @@ call ProcessList(b:fileList, "SourceFile")
 " " Hotkeys
 " " -----------------------------------------------------------------------------
 " 
-" nmap <leader>g <Plug>(easymotion-bd-w)
-" nmap s <Plug>(easymotion-s2)
-" map t <Plug>(easymotion-bd-t)
-" map f <Plug>(easymotion-bd-f)
-" omap t <Plug>(easymotion-tl)
-" omap f <Plug>(easymotion-fl)
-" nmap <leader><leader>j <Plug>(easymotion-j)
-" nmap <leader><leader>k <Plug>(easymotion-k)
-" 
 
-" nnoremap <leader>gs :Git<CR>
-" nnoremap <leader>gl :Gclog<CR>
-" nnoremap <leader>ga :Git add .<CR>
-" nnoremap <leader>gp :Git add --patch .<CR>
-" nnoremap <leader>gd :Gvdiffsplit<CR>
-" 
 
 " nnoremap <silent> <leader>cd :YcmCompleter GoTo<CR>
 " nnoremap <silent> <leader>cf :YcmCompleter FixIt<CR>
