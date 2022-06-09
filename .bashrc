@@ -1,3 +1,15 @@
+function trunc_pwd() {
+	max_pwd=30
+  if [ $(echo $(pwd) | sed -e "s_${HOME}_~_" | wc -c | tr -d " ") -gt $max_pwd ]
+  then
+    newPWD="...$(echo $(pwd) | sed -e "s_${HOME}_~_" | sed -e "s/.*\(.\{$max_pwd\}\)/\1/")"
+  else
+    newPWD="$(echo $(pwd) | sed -e "s_${HOME}_~_")"
+  fi
+}
+
+PROMPT_COMMAND=trunc_pwd
+
 if test -f /etc/profile.d/git-sdk.sh
 then
 	TITLEPREFIX=SDK-${MSYSTEM#MINGW}
@@ -14,7 +26,7 @@ else
 	PS1="$PS1"'\[\033[32m\]'       	# change to green
 	PS1="$PS1"'\h '       	        # Hostname
 	PS1="$PS1"'\[\033[33m\]'      	# change to brownish yellow
-	PS1="$PS1"'\W'                 	# current working directory
+	PS1="$PS1"'$newPWD'                 	# current working directory
 	if test -z "$WINELOADERNOEXEC"
 	then
 		GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
@@ -48,4 +60,12 @@ then
 		test ! -f "$c" ||
 		. "$c"
 	done
+fi
+
+if [ -e $HOME/.bash_aliases ]; then
+	source $HOME/.bash_aliases
+fi
+
+if [ -e $HOME/.bash_functions ]; then
+	source $HOME/.bash_functions
 fi
