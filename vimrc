@@ -146,53 +146,18 @@ call ProcessList(b:fileList, "SourceFile")
 " nmap <leader><leader>j <Plug>(easymotion-j)
 " nmap <leader><leader>k <Plug>(easymotion-k)
 " 
-" nnoremap <leader>vc :!code .<CR>
-" nnoremap <leader>vt :term<SPACE>
-" nnoremap <leader>vl :IndentLinesToggle<CR>
-" nnoremap <leader>vf :term npm run format<CR>
-" 
+
 " nnoremap <leader>gs :Git<CR>
 " nnoremap <leader>gl :Gclog<CR>
 " nnoremap <leader>ga :Git add .<CR>
 " nnoremap <leader>gp :Git add --patch .<CR>
 " nnoremap <leader>gd :Gvdiffsplit<CR>
 " 
-" nnoremap <leader>sx :split<CR>
-" nnoremap <leader>sy :vsplit<CR>
-" 
-" nnoremap <leader>h :wincmd h<CR>
-" nnoremap <leader>j :wincmd j<CR>
-" nnoremap <leader>l :wincmd l<CR>
-" nnoremap <leader>k :wincmd k<CR>
-" nnoremap <leader>u :UndotreeShow<CR>
-" 
-" nnoremap <leader>ps :Rg<SPACE>
-" nnoremap <leader>p :Prettier<CR>
-" 
-" nnoremap <silent> <leader>+ :vertical resize +5<CR>
-" nnoremap <silent> <leader>- :vertical resize -5<CR>
-" nnoremap <silent> <leader>. :resize +5<CR>
-" nnoremap <silent> <leader>, :resize -5<CR>
-" 
+
 " nnoremap <silent> <leader>cd :YcmCompleter GoTo<CR>
 " nnoremap <silent> <leader>cf :YcmCompleter FixIt<CR>
 " 
-" nnoremap <silent> <leader>to :NERDTreeMirror<CR>:NERDTreeFocus<CR>
-" nnoremap <silent> <leader>tt :NERDTreeToggle<CR>
-" nnoremap <silent> <leader>tf :NERDTreeFind<CR>
-" 
-" nnoremap <C-m> :tabn<CR>
-" nnoremap <C-b> :tabp<CR>
-" nnoremap <C-n> :tabnew<CR>
-" nnoremap <C-s> :wa<CR>
-" 
-" nnoremap <C-j> :m+<CR>==
-" nnoremap <C-k> :m-2<CR>==
-" inoremap <C-k> <Esc>:m-2<CR>==gi
-" inoremap <C-j> <Esc>:m+<CR>==gi
-" vnoremap <C-j> :m'>+<CR>gv=gv
-" vnoremap <C-k> :m-2<CR>gv=gv
-" 
+
 " if has('nvim')
 "     " Find files using Telescope command-line sugar.
 "     nnoremap <leader>ff <cmd>Telescope find_files<cr>
