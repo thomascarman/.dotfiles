@@ -11,7 +11,8 @@
 " -----------------------------------------------------------------------------
 " Plugin Keymappings
 " -----------------------------------------------------------------------------
-" N/A
+nnoremap <silent> <leader>cd :YcmCompleter GoTo<CR>
+nnoremap <silent> <leader>cf :YcmCompleter FixIt<CR>
 
 " -----------------------------------------------------------------------------
 " Unite Keymap Menu Item(s)
