@@ -37,6 +37,8 @@
 " -----------------------------------------------------------------------------
 " Keymaps
 " -----------------------------------------------------------------------------
+imap jj <Esc>
+
 nnoremap <leader>vc :!code .<CR>
 nnoremap <leader>vt :term<SPACE>
 nnoremap <leader>vl :IndentLinesToggle<CR>
