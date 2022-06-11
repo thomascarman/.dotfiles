@@ -22,7 +22,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set splitbelow splitright
-set colorcolumn=80
+set colorcolumn=90
 set t_Co=256
 set whichwrap=<,>,h,l
 
