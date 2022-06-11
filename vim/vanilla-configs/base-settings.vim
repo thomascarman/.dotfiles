@@ -15,7 +15,6 @@ set smartindent
 set number relativenumber
 set nu rnu
 set nowrap
-set smartcase
 set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
@@ -26,6 +25,9 @@ set textwidth=90
 set colorcolumn=90
 set t_Co=256
 set whichwrap=<,>,h,l
+set smartcase
+set ignorecase
+set mouse=n
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:netrw_brose_split=2
