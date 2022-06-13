@@ -33,7 +33,7 @@
 " > Custom Init
 "     Source custom-init to allow excluding plugins
 " ----------------------------------------------------------------------------------------
-let b:customInit=expand('~/dotfiles/custom-configs/**/custom-init.vim')
+let b:customInit=expand('~/.dotfiles/custom-configs/**/custom-init.vim')
 if filereadable(b:customInit)
     exe 'source' b:customInit
 endif
@@ -46,11 +46,11 @@ endif
 " > Initalize Plugins
 "     Buffer variables that control plugin loading and files for configs
 " ----------------------------------------------------------------------------------------
-let b:pluginList = split(globpath('~/dotfiles/vim/unite-config', '*.vim'), '\n')
-let b:pluginList += split(globpath('~/dotfiles/vim/plugin-configs', '*.vim'), '\n')
-let b:fileList = split(globpath('~/dotfiles/vim/unite-config', '*.vim'), '\n')
-let b:fileList += split(globpath('~/dotfiles/vim/vanilla-configs', '*.vim'), '\n')
-let b:fileList += split(globpath('~/dotfiles/vim/plugin-configs', '*.vim'), '\n')
+let b:pluginList = split(globpath('~/.dotfiles/vim/unite-config', '*.vim'), '\n')
+let b:pluginList += split(globpath('~/.dotfiles/vim/plugin-configs', '*.vim'), '\n')
+let b:fileList = split(globpath('~/.dotfiles/vim/unite-config', '*.vim'), '\n')
+let b:fileList += split(globpath('~/.dotfiles/vim/vanilla-configs', '*.vim'), '\n')
+let b:fileList += split(globpath('~/.dotfiles/vim/plugin-configs', '*.vim'), '\n')
 
 " ----------------------------------------------------------------------------------------
 " > Leader Keys
