@@ -76,3 +76,18 @@ vnoremap <C-k> :m-2<CR>gv=gv
 "     nnoremap <leader>fb <cmd>Telescope buffers<cr>
 "     nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 " endif
+
+" -----------------------------------------------------------------------------
+" Unite Keymap Menu Item(s)
+" -----------------------------------------------------------------------------
+let g:unite_source_menu_menus.CustomKeyMaps.command_candidates += [
+    \['➤ Quick exit Insert Mode                                        jj', 'echo "Use jj to exit insert mode'],
+    \['➤ Split current Pane Vertically                                 <Leader>sy', 'echo "Split current pane vertically"'],
+    \['➤ Split current Pane Horizontally                               <Leader>sy', 'echo "Split current pane horizontally"'],
+    \['➤ Change split screen (up)                                      <Leader>k', 'echo "Change to the current split screen to above"'],
+    \['➤ Change split screen (down)                                    <Leader>j', 'echo "Change to the current split screen to below"'],
+    \['➤ Change split screen (left)                                    <Leader>h', 'echo "Change to the current split screen to left"'],
+    \['➤ Change split screen (right)                                   <Leader>l', 'echo "Change to the current split screen to right"'],
+    \['➤ Move selected line(s) down                                    <C-j>', 'echo "Move line(s) Down"'],
+    \['➤ Move selected line(s) up                                      <C-k>', 'echo "Use <C-k> to move selected Line(s) up']
+    \]
