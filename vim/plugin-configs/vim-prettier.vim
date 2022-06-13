@@ -16,6 +16,7 @@ let g:prettier#quickfix_enabled = 0
 " -----------------------------------------------------------------------------
 nnoremap <leader>ps :Rg<SPACE>
 nnoremap <leader>p :Prettier<CR>
+nnoremap <leader>P :%s/\r//g<CR>
 
 " -----------------------------------------------------------------------------
 " Unite Keymap Menu Item(s)
