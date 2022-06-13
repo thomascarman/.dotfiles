@@ -29,4 +29,11 @@ nmap <leader><leader>k <Plug>(easymotion-k)
 " -----------------------------------------------------------------------------
 " Unite Keymap Menu Item(s)
 " -----------------------------------------------------------------------------
-" N/A
+let g:unite_source_menu_menus.PluginKeyMaps.command_candidates += [
+    \['➤ Search words by Character                                      <Leader>g', 'echo "Search words by Character"'],
+    \['➤ Search for two Characters                                      s', 'echo "Search for Two Charaters"'],
+    \['➤ Goto given Character                                           f', 'echo "Goto given Character"'],
+    \['➤ Goto before given Character                                    t', 'echo "Goto before given Character"'],
+    \['➤ Goto line via key (before)                                     <Leader><Leader>k', 'echo "Goto line via key (before)"'],
+    \['➤ Goto line via key (after)                                      <Leader><Leader>j', 'echo "Goto line via key (after)"'],
+    \]
