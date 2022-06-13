@@ -66,10 +66,6 @@ let g:unite_source_menu_menus.CustomKeyMaps.command_candidates = [
     \['➤ Search jumps                                                  <Leader>sj', 'Unite jump'],
     \['➤ Search lines in the current buffer                            <Leader>sb', 'Unite line'],
     \['➤ Update Vim plugins                                            <Leader>vu', 'normal <Leader>vu'],
-    \['➤ Grep in Quickfix buffer                                       <Leader>g', 'echo "Use <Leader>g to grep within the Quickfix buffer"'],
-    \['➤ Restore the Quickfix buffer                                   <Leader>r', 'echo "Use <Leader>r to restore the Quickfix buffer"'],
-    \['➤ Reverse Grep in Quickfix buffer                               <Leader>v', 'echo "Use <Leader>v to reverse grep within the Quickfix buffer"'],
-    \['➤ Reverse Grep Line Under Cursor in Quickfix buffer             <Leader>d', 'echo "Use <Leader>d to reverse grep the Line Under the Cursor in Quickfix buffer"'],
     \]
 nnoremap <silent>[menu]<Space> :Unite -silent -winheight=17 -start-insert menu:CustomKeyMaps<CR>
 
@@ -78,7 +74,6 @@ nnoremap <silent>[menu]<Space> :Unite -silent -winheight=17 -start-insert menu:C
 " -----------------------------------------------------------------------------
 let g:unite_source_menu_menus.PluginKeyMaps = {'description': 'Keyboard shortcuts mapped by 3rd party plugins     |p'}
 let g:unite_source_menu_menus.PluginKeyMaps.command_candidates = [
-    \['➤ Replace in quickfix                                   :Qfreplace', 'echo "Use :Qfreplace"'],
     \]
 nnoremap <silent>[menu]p :Unite -silent -winheight=17 -start-insert menu:PluginKeyMaps<CR>
 
@@ -87,7 +82,7 @@ nnoremap <silent>[menu]p :Unite -silent -winheight=17 -start-insert menu:PluginK
 " -----------------------------------------------------------------------------
 let g:unite_source_menu_menus.BuiltInKeyMaps = {'description': 'Lesser known/used builtin vim keybindings         |b'}
 let g:unite_source_menu_menus.BuiltInKeyMaps.command_candidates = [
-    \['➤ Show current char info                                        ga', 'normal ga'],
+    \['➤ Dont have any thing here for you yet                           ', ''],
     \]
 nnoremap <silent>[menu]b :Unite -silent -winheight=17 -start-insert menu:BuiltInKeyMaps<CR>
 
