@@ -29,6 +29,8 @@ set smartcase
 set ignorecase
 set mouse=n
 
+filetype plugin on
+
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:netrw_brose_split=2
 let g:netrw_banner=0
