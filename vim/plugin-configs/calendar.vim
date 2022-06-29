@@ -7,6 +7,7 @@
 " Plugin Configurations
 " -----------------------------------------------------------------------------
 let g:calendar_first_day='sunday'
+let g:calendar_cache_directory='~/.vault/.cache/calendar.vim/'
 
 function! s:prefix_zero(num) abort
   if a:num < 10
