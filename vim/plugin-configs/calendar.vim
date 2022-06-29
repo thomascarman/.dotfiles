@@ -6,10 +6,7 @@
 " -----------------------------------------------------------------------------
 " Plugin Configurations
 " -----------------------------------------------------------------------------
-let g:calendar_filetype='markdown'
-let g:calendar_no_mappings=0
-let g:calendar_navi='both'
-let g:calendar_number_of_months=5
+let g:calendar_first_day='sunday'
 
 function! s:prefix_zero(num) abort
   if a:num < 10
