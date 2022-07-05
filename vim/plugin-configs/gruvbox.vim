@@ -8,6 +8,8 @@
 " -----------------------------------------------------------------------------
 colorscheme gruvbox
 set background=dark
+let g:gruvbox_contrast_light='soft'
+let g:gruvbox_contrast_dark='hard'
 let g:airline_theme='kolor'
 
 " -----------------------------------------------------------------------------
