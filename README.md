@@ -53,16 +53,16 @@ ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/vimrc ~/.vimrc
 
 # Link to .gitconfig Globals
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 
 # Link to .p10k.zsh file
-ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
+ln -s ~/.dotfiles/p10k.zsh ~/.p10k.zsh
 
 # Link to Remotes main settings for VScode
-ln -s ~/.dotfiles/.vscode/settings.json ~/.vscode-server/data/Machine/settings.json
+ln -s ~/.dotfiles/vscode/settings.json ~/.vscode-server/data/Machine/settings.json
 
 # Link IRSSI file
-ln -s ~/.dotfiles/.irssi/config ~/.irssi/config
+ln -s ~/.dotfiles/irssi/config ~/.irssi/config
 ```
 
 8. Install HomeBrew, and install software listed in Brewfile
