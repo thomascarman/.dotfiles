@@ -32,6 +32,19 @@ echo "NVM and Node installed Installed and Configured" >> $log_file
 node_version=`node -v`
 echo "Node: "$node_version
 
+# ---
+# Install Homebrew
+# ---
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+
+# ---
+# Then pass in the Brewfile
+# ---
+brew bundle --file ~/.dotfiles/Brewfile
 
 # ---
 # Install git-completion and git-prompt
