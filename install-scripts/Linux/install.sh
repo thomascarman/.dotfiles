@@ -28,8 +28,14 @@ else
   echo "curl FAILED TO INSTALL!!!" >> $log_file
 fi
 
-curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+# ---
+# Install Oh My Zsh!
+# ---
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# ---
+# Install PowerLevel10k Theme
+# ---
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # ---
