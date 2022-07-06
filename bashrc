@@ -82,6 +82,7 @@ fi
 
 case $yn in
     [yY] ) echo ok, Opening...;
+        sleep 0.2;
         vim +VimwikiIndex;
         break;;
     [nN] ) echo no problem;
