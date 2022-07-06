@@ -55,6 +55,16 @@ mv ~/git-completion.bash ~/.git-completion.bash
 curl https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
 echo "git-completion and git-prompt Installed and Configured" >> $log_file
 
+# ---
+# Create symlinks
+# ---
+ln -s ~/.dotfiles/zshrc ~/.zshrc
+ln -s ~/.dotfiles/vimrc ~/.vimrc
+ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/p10k.zsh ~/.p10k.zsh
+ln -s ~/.dotfiles/vscode/settings.json ~/.vscode-server/data/Machine/settings.json
+ln -s ~/.dotfiles/irssi/config ~/.irssi/config
+
 echo -e "\n====== Summary ======\n"
 cat $log_file
 echo
