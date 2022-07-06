@@ -9,6 +9,14 @@
 let g:vimwiki_list = [{'path': '~/.vault/docs/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
+" Add command Diary to open diary list
+command! Diary VimwikiDiaryIndex
+augroup vimwikigroup
+    autocmd!
+    " automaticlly update links on read diary
+    autocmd BufRead,BufNewFile diary.md VimwikiDiaryGenerateLinks
+augroup end
+
 " -----------------------------------------------------------------------------
 " Plugin Keymappings
 " -----------------------------------------------------------------------------
