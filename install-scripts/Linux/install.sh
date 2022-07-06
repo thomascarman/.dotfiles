@@ -5,6 +5,15 @@
 
 log_file=~/install_progress_log.txt
 
+# ---
+# Update apt-get
+# ---
+sudo apt-get update
+sudo apt-get upgrade
+
+# ---
+# Install zsh and curl
+# ---
 sudo apt-get -y install zsh
 if type -p zsh > /dev/null; then
   echo "zsh Installed" >> $log_file
