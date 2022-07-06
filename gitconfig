@@ -1,7 +1,7 @@
 [core]
 	filemode = false
 	autocrlf = true
-	editor = code --wait
+	editor = vim
 [user]
 	name = Thomas Carman
 	email = thomascarman@users.noreply.github.com
