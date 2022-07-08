@@ -122,3 +122,10 @@ alias chat="irssi"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ~/.dotfiles/message.sh
+
+# bun completions
+[ -s "/home/carmant/.bun/_bun" ] && source "/home/carmant/.bun/_bun"
+
+# Bun
+export BUN_INSTALL="/home/carmant/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
