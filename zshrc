@@ -121,23 +121,4 @@ alias chat="irssi"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-cat ~/.dotfiles/welcomeMessage.txt
-
-while true; do
-
-read -p "Do you want to open up your wiki? (Y/n) " yn
-
-if [ "$yn" = "" ]; then
-    yn="Y"
-fi
-
-case $yn in
-    [yY] ) echo ok, Opening...;
-        vim +VimwikiIndex;
-        break;;
-    [nN] ) echo no problem;
-        break;;
-    * ) echo invalid response;;
-esac
-
-done
+~/.dotfiles/message.sh
