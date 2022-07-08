@@ -13,9 +13,13 @@ fi
 case $yn in
     [yY] ) echo ok, Opening...;
         cd ~/.vault;
+        sleep 1;
+        clear;
         vim +VimwikiIndex;
         break;;
     [nN] ) echo no problem;
+        sleep 1;
+        clear;
         break;;
     * ) echo invalid response;;
 esac
