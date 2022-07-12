@@ -6,18 +6,19 @@
 " -----------------------------------------------------------------------------
 " Plugin Configurations
 " -----------------------------------------------------------------------------
-let g:calendar_no_mappings=0
-let g:calendar_datetime='title'
-let g:calendar_number_of_months=5
-let g:calendar_filetype='markdown'
-let g:calendar_diary='~/.vault/docs/diary'
-let g:calendar_diary_list = [
-    \   {'name': 'Diary', 'path': $HOME.'/.vault/docs/diary', 'ext': '.md'},
-    \   {'name': 'Notes', 'path': $HOME.'/.vault/docs/notes', 'ext': '.md'},
-    \ ]
+" let g:calendar_no_mappings=0
+" let g:calendar_datetime='title'
+" let g:calendar_number_of_months=5
+" let g:calendar_filetype='markdown'
+" let g:calendar_diary='~/.vault/docs/diary'
+" let g:calendar_diary_list = [
+"     \   {'name': 'Diary', 'path': $HOME.'/.vault/docs/diary', 'ext': '.md'},
+"     \   {'name': 'Notes', 'path': $HOME.'/.vault/docs/notes', 'ext': '.md'},
+"     \ ]
 
-" let g:calendar_first_day='sunday'
-" let g:calendar_cache_directory='~/.vault/.cache/calendar.vim/'
+let g:calendar_first_day='sunday'
+let g:calendar_cache_directory='~/.vault/.cache/calendar.vim/'
+let g:calendar_task_delete = 1
 
 " function! s:prefix_zero(num) abort
 "   if a:num < 10
@@ -53,8 +54,11 @@ let g:calendar_diary_list = [
 " -----------------------------------------------------------------------------
 " Plugin Keymappings
 " -----------------------------------------------------------------------------
-nmap <LocalLeader>cal :Calendar<CR>
-nmap <LocalLeader>Cal :CalendarT<CR>
+nmap <LocalLeader>cal :Calendar -view=week -split=vertical -position=right<CR>
+nmap <LocalLeader>Cal :Calendar<CR>
+nmap <LocalLeader>u <Plug>(calendar_undo)
+nmap <LocalLeader>c <Plug>(calendar_clear)
+nmap <LocalLeader>d <Plug>(calendar_delete)
 
 " -----------------------------------------------------------------------------
 " Unite Keymap Menu Item(s)
