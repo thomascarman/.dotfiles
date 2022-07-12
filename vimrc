@@ -96,7 +96,6 @@ endif
 " ----------------------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
 call ProcessList(b:pluginList, 'AddBundle')
-Plug 'mattn/calendar-vim'
 call plug#end()
 
 " ----------------------------------------------------------------------------------------
@@ -108,4 +107,3 @@ filetype plugin indent on
 " > Source Configs
 " ----------------------------------------------------------------------------------------
 call ProcessList(b:fileList, "SourceFile")
-source ~/.dotfiles/vim/plugin-configs/calendar.vim
