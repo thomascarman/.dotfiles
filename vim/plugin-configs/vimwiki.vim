@@ -21,6 +21,13 @@ augroup vimwikigroup
     autocmd BufRead,BufNewFile diary.md VimwikiDiaryGenerateLinks
 augroup end
 
+command! Tags e ~/.vault/docs/Tags.md
+augroup vimwikigroup
+    autocmd!
+    " automaticlly update links on read diary
+    autocmd BufRead,BufNewFile Tags.md VimwikiGenerateTagLinks
+augroup end
+
 " -----------------------------------------------------------------------------
 " Plugin Keymappings
 " -----------------------------------------------------------------------------
