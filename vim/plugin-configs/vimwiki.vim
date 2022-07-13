@@ -21,7 +21,7 @@ augroup vimwikigroup
     autocmd BufRead,BufNewFile diary.md VimwikiDiaryGenerateLinks
 augroup end
 
-command! Tags VimwikiGoto Tags
+command! Tags e ~/.vault/docs/Tags.md
 augroup vimwikigroup
     autocmd!
     " automaticlly update links on read diary
