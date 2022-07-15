@@ -28,8 +28,9 @@ set whichwrap=<,>,h,l
 set smartcase
 set ignorecase
 set mouse=n
+set termguicolors
 
-filetype plugin on
+filetype plugin indent on
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:netrw_brose_split=2
