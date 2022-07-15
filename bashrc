@@ -70,4 +70,7 @@ if [ -e $HOME/.bash_functions ]; then
 	source $HOME/.bash_functions
 fi
 
+alias ll="ls -la"
+alias notes="cd ~/.vault/docs && vim index.md"
+
 ~/.dotfiles/message.sh
