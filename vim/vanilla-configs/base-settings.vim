@@ -28,7 +28,6 @@ set whichwrap=<,>,h,l
 set smartcase
 set ignorecase
 set mouse=n
-set termguicolors
 
 filetype plugin indent on
 
