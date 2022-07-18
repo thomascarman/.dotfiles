@@ -8,7 +8,7 @@
 " -----------------------------------------------------------------------------
 let g:vimwiki_list = [{'path': '~/.vault/docs/',
                       \ 'syntax': 'markdown', 'ext': '.md',
-                      \ 'auto_tags': 1, 'auto_generate_tags': 1,
+                      \ 'auto_tags': 1, 'auto_generate_tags': 0,
                       \ 'auto_diary_index': 1}]
 let g:vimwiki_hl_headers=1
 let g:vimwiki_hl_cb_checked=2
