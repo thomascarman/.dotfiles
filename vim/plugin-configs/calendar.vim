@@ -16,9 +16,14 @@
 "     \   {'name': 'Notes', 'path': $HOME.'/.vault/docs/notes', 'ext': '.md'},
 "     \ ]
 
+source ~/.vault/.cache/calendar.vim/credentials.vim
+
 let g:calendar_first_day='sunday'
 let g:calendar_cache_directory='~/.vault/.cache/calendar.vim/'
 let g:calendar_task_delete = 1
+
+let g:calendar_google_calendar = 1
+let g:calendar_google_task = 1
 
 " function! s:prefix_zero(num) abort
 "   if a:num < 10
