@@ -71,6 +71,7 @@ if [ -e $HOME/.bash_functions ]; then
 fi
 
 alias ll="ls -la"
+alias calendar="vim -c \"Calendar\""
 alias notes="cd ~/.vault/docs && vim index.md"
 
 ~/.dotfiles/message.sh
