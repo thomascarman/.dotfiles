@@ -95,8 +95,8 @@ endif
 " > Load Plugins
 " ----------------------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
-Plug 'tools-life/taskwiki'
 call ProcessList(b:pluginList, 'AddBundle')
+" Plug 'tools-life/taskwiki'
 call plug#end()
 
 " ----------------------------------------------------------------------------------------
