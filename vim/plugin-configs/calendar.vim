@@ -16,11 +16,11 @@
 "     \   {'name': 'Notes', 'path': $HOME.'/.vault/docs/notes', 'ext': '.md'},
 "     \ ]
 
-source ~/.vault/.cache/calendar.vim/credentials.vim
+source ~/.cache/calendar.vim/credentials.vim
 
 let g:calendar_views=["year","month","week","agenda","event","day","clock"]
 let g:calendar_first_day='sunday'
-let g:calendar_cache_directory='~/.vault/.cache/calendar.vim/'
+let g:calendar_cache_directory='~/.cache/calendar.vim/'
 let g:calendar_week_number=1
 let g:calendar_task=1
 let g:calendar_task_delete=0
