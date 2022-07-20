@@ -61,9 +61,22 @@ nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <silent> <leader>. :resize +5<CR>
 nnoremap <silent> <leader>, :resize -5<CR>
 
-nnoremap <C-m> :tabn<CR>
-nnoremap <C-b> :tabp<CR>
+nnoremap <leader>1 1gt<CR>
+nnoremap <leader>2 2gt<CR>
+nnoremap <leader>3 3gt<CR>
+nnoremap <leader>4 4gt<CR>
+nnoremap <leader>5 5gt<CR>
+nnoremap <leader>6 6gt<CR>
+nnoremap <leader>7 7gt<CR>
+nnoremap <leader>8 8gt<CR>
+nnoremap <leader>9 9gt<CR>
+nnoremap <leader>0 0gt<CR>
+nnoremap <leader>= :tabn<CR>
+nnoremap <leader>+ :tabmove+<CR>
+nnoremap <leader>- :tabp<CR>
+nnoremap <leader>_ :tabmove-<CR>
 nnoremap <C-n> :tabnew<CR>
+nnoremap <C-S-n> :tabclose<CR>
 nnoremap <C-s> :wa<CR>
 
 nnoremap <C-j> :m+<CR>==
