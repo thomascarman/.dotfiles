@@ -114,10 +114,14 @@ fi
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
+alias dotfiles="cd ~/.dotfiles"
 alias fire="cacafire"
 alias starwars="telnet towel.blinkenlights.nl"
 alias chat="irssi"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ll="ls -la"
+alias calendar="vim -c \"Calendar\""
+alias notes="cd ~/.vault/docs && vim index.md"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
