@@ -17,7 +17,7 @@
 " Inspired by: mattjmorrison/dotfiles (check them out on Github)
 "   I have taking and modified to fit my needs from mattjmorrison's vimrc for their
 "   dotfiles
-" 
+"
 " Sections:
 "   > Custom Init
 "   > Initalize Plugins
@@ -96,7 +96,7 @@ endif
 " ----------------------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
 call ProcessList(b:pluginList, 'AddBundle')
-" Plug 'tools-life/taskwiki'
+Plug 'vim-airline/vim-airline-themes' " Themes need to run affter vim-airline to set config
 call plug#end()
 
 " ----------------------------------------------------------------------------------------

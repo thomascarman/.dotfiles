@@ -61,9 +61,22 @@ nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <silent> <leader>. :resize +5<CR>
 nnoremap <silent> <leader>, :resize -5<CR>
 
-nnoremap <C-m> :tabn<CR>
-nnoremap <C-b> :tabp<CR>
+nnoremap <leader>1 1gt<CR>
+nnoremap <leader>2 2gt<CR>
+nnoremap <leader>3 3gt<CR>
+nnoremap <leader>4 4gt<CR>
+nnoremap <leader>5 5gt<CR>
+nnoremap <leader>6 6gt<CR>
+nnoremap <leader>7 7gt<CR>
+nnoremap <leader>8 8gt<CR>
+nnoremap <leader>9 9gt<CR>
+nnoremap <leader>0 0gt<CR>
+nnoremap <leader>= :tabn<CR>
+nnoremap <leader>+ :tabmove+<CR>
+nnoremap <leader>- :tabp<CR>
+nnoremap <leader>_ :tabmove-<CR>
 nnoremap <C-n> :tabnew<CR>
+nnoremap <C-S-n> :tabclose<CR>
 nnoremap <C-s> :wa<CR>
 
 nnoremap <C-j> :m+<CR>==
@@ -93,5 +106,10 @@ let g:unite_source_menu_menus.CustomKeyMaps.command_candidates += [
     \['➤ Change split screen (left)                                    <Leader>h', 'echo "Change to the current split screen to left"'],
     \['➤ Change split screen (right)                                   <Leader>l', 'echo "Change to the current split screen to right"'],
     \['➤ Move selected line(s) down                                    <C-j>', 'echo "Move line(s) Down"'],
+    \['➤ Go to next tab                                                <leader>=', 'echo "Use <leader>= to go to next tab"'],
+    \['➤ Go to prev tab                                                <leader>-', 'echo "Use <leader>- to go to prev tab"'],
+    \['➤ Go to {index} tab (start at 1)                                <leader>{0-9}', 'echo "Use <leader> followed by index of tab to go {index} tab"'],
+    \['➤ Move current tab forward                                      <leader>+', 'echo "Use <leader>+ to move current tab up one index"'],
+    \['➤ Move current tab backward                                     <leader>_', 'echo "Use <leader>_ to move current tab down one index"'],
     \['➤ Move selected line(s) up                                      <C-k>', 'echo "Use <C-k> to move selected Line(s) up"']
     \]
