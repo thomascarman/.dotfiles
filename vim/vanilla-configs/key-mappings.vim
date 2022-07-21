@@ -76,7 +76,7 @@ nnoremap <leader>+ :tabmove+<CR>
 nnoremap <leader>- :tabp<CR>
 nnoremap <leader>_ :tabmove-<CR>
 nnoremap <C-n> :tabnew<CR>
-nnoremap <C-S-n> :tabclose<CR>
+nnoremap <S-n> :tabclose<CR>
 nnoremap <C-s> :wa<CR>
 
 nnoremap <C-j> :m+<CR>==
