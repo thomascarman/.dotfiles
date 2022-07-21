@@ -1,6 +1,6 @@
 [core]
 	filemode = false
-	autocrlf = true
+    autocrlf = false
 	editor = vim
 [user]
 	name = Thomas Carman
