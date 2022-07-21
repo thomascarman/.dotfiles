@@ -122,6 +122,8 @@ alias chat="irssi"
 alias ll="ls -la"
 alias calendar="vim -c \"Calendar\""
 alias notes="cd ~/.vault/docs && vim index.md"
+alias vi="nvim"
+alias vim="nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
