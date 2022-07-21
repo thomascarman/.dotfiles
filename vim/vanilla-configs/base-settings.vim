@@ -17,8 +17,10 @@ set nu rnu
 set nowrap
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
+set undodir="$HOME/.vim/undodir"
 set undofile
+set undolevels=1000
+set undoreload=10000
 set incsearch
 set splitbelow splitright
 set textwidth=90
