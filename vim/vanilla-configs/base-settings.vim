@@ -28,6 +28,7 @@ set whichwrap=<,>,h,l
 set smartcase
 set ignorecase
 set mouse=n
+set noshowmode
 
 filetype plugin indent on
 
