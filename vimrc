@@ -96,6 +96,7 @@ endif
 " ----------------------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
 call ProcessList(b:pluginList, 'AddBundle')
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " ----------------------------------------------------------------------------------------
