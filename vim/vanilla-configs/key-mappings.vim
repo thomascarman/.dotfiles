@@ -56,10 +56,10 @@ nnoremap <leader>cc :cclose<CR>
 nnoremap <leader>cp :cprev<CR>
 nnoremap <leader>cn :cnext<CR>
 
-nnoremap <silent> <leader>+ :vertical resize +5<CR>
-nnoremap <silent> <leader>- :vertical resize -5<CR>
-nnoremap <silent> <leader>. :resize +5<CR>
-nnoremap <silent> <leader>, :resize -5<CR>
+nnoremap <silent> <localleader>+ :vertical resize +5<CR>
+nnoremap <silent> <localleader>_ :vertical resize -5<CR>
+nnoremap <silent> <localleader>> :resize +5<CR>
+nnoremap <silent> <localleader>, :resize -5<CR>
 
 nnoremap <leader>1 1gt<CR>
 nnoremap <leader>2 2gt<CR>
