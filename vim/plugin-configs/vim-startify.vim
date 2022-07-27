@@ -15,6 +15,7 @@ let g:startify_lists = [
   \ ]
 let g:startify_bookmarks = [
   \ { 'c': '~/.dotfiles' },
+  \ { 'b': '~/.bashrc' },
   \ { 'z': '~/.zshrc' },
   \ { 'n': '~/.vault/docs' },
   \ ]
