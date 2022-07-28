@@ -6,10 +6,10 @@
 " -----------------------------------------------------------------------------
 " Plugin Configurations
 " -----------------------------------------------------------------------------
-colorscheme gruvbox
 let g:gruvbox_contrast_light='soft'
 let g:gruvbox_contrast_dark='medium'
 set background=dark
+colorscheme gruvbox
 
 set termguicolors
 
