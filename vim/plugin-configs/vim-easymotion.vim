@@ -26,6 +26,21 @@ omap f <Plug>(easymotion-fl)
 nmap <leader><leader>j <Plug>(easymotion-j)
 nmap <leader><leader>k <Plug>(easymotion-k)
 
+" <Leader>f{char} to move to {char}
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+
+" s{char}{char} to move to {char}{char}
+nmap s <Plug>(easymotion-overwin-f2)
+
+" Move to line
+map <leader>L <Plug>(easymotion-bd-jk)
+nmap <leader>L <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <leader>w <Plug>(easymotion-bd-w)
+nmap <leader>w <Plug>(easymotion-overwin-w)
+
 " -----------------------------------------------------------------------------
 " Unite Keymap Menu Item(s)
 " -----------------------------------------------------------------------------
