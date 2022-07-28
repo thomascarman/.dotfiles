@@ -7,7 +7,7 @@
 " Plugin Configurations
 " -----------------------------------------------------------------------------
 let g:gruvbox_contrast_light='soft'
-let g:gruvbox_contrast_dark='medium'
+let g:gruvbox_contrast_dark='hard'
 set background=dark
 colorscheme gruvbox
 
