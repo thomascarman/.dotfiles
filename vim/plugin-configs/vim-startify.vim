@@ -8,7 +8,7 @@
 " -----------------------------------------------------------------------------
 let g:startify_session_dir='~/.vim/session'
 let g:startify_lists = [
-  \ { 'type': 'files',     'header': ['   📄 Recent Files/Directories']     },
+  \ { 'type': 'files',     'header': ['   📄 Recent Files']                 },
   \ { 'type': 'dir',       'header': ['   📂 Current Directory '. getcwd()] },
   \ { 'type': 'sessions',  'header': ['   ☕ Sessions']                     },
   \ { 'type': 'bookmarks', 'header': ['   📚 Bookmarks']                    },
