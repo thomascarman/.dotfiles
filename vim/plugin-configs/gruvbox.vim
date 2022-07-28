@@ -16,7 +16,19 @@ set termguicolors
 " -----------------------------------------------------------------------------
 " Plugin Keymappings
 " -----------------------------------------------------------------------------
-" N/A
+let s:mybg = "dark"
+function! BgToggle()
+    if (s:mybg ==? "light")
+        set background=dark
+        let s:mybg = "dark"
+    else
+        set background=light
+        let s:mybg = "light"
+    endif
+    colorscheme gruvbox
+endfunction
+
+nnoremap <leader><leader>b :call BgToggle()<CR>
 
 " -----------------------------------------------------------------------------
 " Unite Keymap Menu Item(s)
