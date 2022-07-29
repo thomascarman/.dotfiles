@@ -76,5 +76,8 @@ alias dotfiles="cd ~/.dotfiles"
 alias ll="ll -la"
 alias calendar="vim -c \"Calendar\""
 alias notes="cd ~/.vault/docs && vim index.md"
+alias sql="winpty sqlite3"
+alias sqlite="winpty sqlite3"
+alias sqlite3="winpty sqlite3"
 
 ~/.dotfiles/message.sh
