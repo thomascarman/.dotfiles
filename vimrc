@@ -96,7 +96,10 @@ endif
 " ----------------------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
 call ProcessList(b:pluginList, 'AddBundle')
-Plug 'vim-airline/vim-airline-themes'
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'vim-airline/vim-airline-themes' " Themes need to run after vim-airline to set config
+Plug 'tpope/vim-capslock' " shows airline caps lock from software
+Plug 'diepm/vim-rest-console' " used to create rest calls from files using curl
 call plug#end()
 
 " ----------------------------------------------------------------------------------------
