@@ -49,6 +49,7 @@ endif
 let b:pluginList = split(globpath('~/.dotfiles/vim/unite-config', '*.vim'), '\n')
 let b:pluginList += split(globpath('~/.dotfiles/vim/plugin-configs', '*.vim'), '\n')
 let b:fileList = split(globpath('~/.dotfiles/vim/unite-config', '*.vim'), '\n')
+let b:fileList += split(globpath('~/.dotfiles/vim/coc-config', '*.vim'), '\n')
 let b:fileList += split(globpath('~/.dotfiles/vim/vanilla-configs', '*.vim'), '\n')
 let b:fileList += split(globpath('~/.dotfiles/vim/plugin-configs', '*.vim'), '\n')
 
