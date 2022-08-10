@@ -79,5 +79,6 @@ alias notes="cd ~/.vault/docs && vim index.md"
 alias sql="winpty sqlite3"
 alias sqlite="winpty sqlite3"
 alias sqlite3="winpty sqlite3"
+alias xp="explorer.exe"
 
 ~/.dotfiles/message.sh
