@@ -1,5 +1,5 @@
-notes ~/.vault/docs/index.md
-dotfiles ~/.dotfiles
+notes ~/.vault/docs/
+dotfiles ~/.dotfiles/
 bashrc ~/.dotfiles/bashrc
 zshrc ~/.dotfiles/zshrc
 vimrc ~/.dotfiles/vimrc
