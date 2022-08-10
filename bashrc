@@ -70,7 +70,7 @@ if [ -e $HOME/.bash_functions ]; then
 	source $HOME/.bash_functions
 fi
 
-alias zshconfig="vim ~/.zshrc"
+alias bashconfig="vim ~/.bashrc"
 alias vimconfig="vim ~/.vimrc"
 alias dotfiles="cd ~/.dotfiles"
 alias ll="ll -la"
