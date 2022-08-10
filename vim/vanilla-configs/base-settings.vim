@@ -31,6 +31,7 @@ set smartcase
 set ignorecase
 set mouse=n
 set noshowmode
+set formatoptions=
 
 filetype plugin indent on
 
