@@ -1,0 +1,17 @@
+ThemeFile=gruvbox
+Transparency=low
+CursorType=block
+FontHeight=12
+OpaqueWhenFocused=no
+Font=RobotoMono NF
+FontWeight=400
+FontIsBold=no
+FontSmoothing=default
+BoldAsFont=no
+EmojiPlacement=full
+Term=xterm-256color
+BellFlash=yes
+AllowBlinking=yes
+Scrollbar=none
+RewrapOnResize=yes
+ClicksPlaceCursor=yes
