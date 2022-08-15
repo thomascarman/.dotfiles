@@ -81,4 +81,4 @@ alias sqlite="winpty sqlite3"
 alias sqlite3="winpty sqlite3"
 alias xp="explorer.exe"
 
-~/.dotfiles/message.sh
+# ~/.dotfiles/message.sh
