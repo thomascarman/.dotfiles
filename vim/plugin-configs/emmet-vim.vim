@@ -9,7 +9,7 @@
 let g:user_emmet_install_global = 0
 let g:user_emmet_leader_key=','
 " Enable just in html-like files
-autocmd FileType html,htmldjango,handlebars,html.handlebars EmmetInstall
+autocmd FileType html,htmldjango,handlebars,html.handlebars,svelte EmmetInstall
 
 " -----------------------------------------------------------------------------
 " Plugin Keymappings
