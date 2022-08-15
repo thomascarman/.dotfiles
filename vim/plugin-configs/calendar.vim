@@ -24,6 +24,7 @@ let g:calendar_cache_directory='~/.cache/calendar.vim/'
 let g:calendar_week_number=1
 let g:calendar_task=1
 let g:calendar_task_delete=0
+let g:calendar_date_month_name=1
 
 let g:calendar_google_calendar=1
 let g:calendar_google_task=1
