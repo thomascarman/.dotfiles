@@ -73,7 +73,7 @@ fi
 alias bashconfig="vim ~/.bashrc"
 alias vimconfig="vim ~/.vimrc"
 alias dotfiles="cd ~/.dotfiles"
-alias ll="ll -la"
+alias ll="ls -la"
 alias calendar="vim -c \"Calendar\""
 alias notes="cd ~/.vault/docs && vim index.md"
 alias sql="winpty sqlite3"
