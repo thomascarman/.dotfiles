@@ -70,6 +70,12 @@ if [ -e $HOME/.bash_functions ]; then
 	source $HOME/.bash_functions
 fi
 
+function diary () {
+    dt=$(date +%Y-%m-%d)
+    output="$HOME/.vault/docs/diary/$dt.md"
+    vim "$output"
+}
+
 alias bashconfig="vim ~/.bashrc"
 alias vimconfig="vim ~/.vimrc"
 alias dotfiles="cd ~/.dotfiles"
