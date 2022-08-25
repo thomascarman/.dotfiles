@@ -37,6 +37,8 @@
     b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
     # list aliases
     la = "!git config -l | grep alias | cut -c 7-"
+
+    ls-subtrees = !"git log | grep git-subtree-dir | awk '{ print $2 }'"
 [credential "https://github.com"]
 	helper = !gh auth git-credential
 [pull]
