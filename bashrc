@@ -86,5 +86,6 @@ alias sql="winpty sqlite3"
 alias sqlite="winpty sqlite3"
 alias sqlite3="winpty sqlite3"
 alias xp="explorer.exe"
+alias nvim="winpty nvim"
 
 # ~/.dotfiles/message.sh
