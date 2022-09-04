@@ -63,6 +63,9 @@ ln -s ~/.dotfiles/vscode/settings.json ~/.vscode-server/data/Machine/settings.js
 
 # Link IRSSI file
 ln -s ~/.dotfiles/irssi/config ~/.irssi/config
+
+# Link Nvim Configs
+ln -s ~/.dotfiles/nvim/ ~/.config/
 ```
 
 8. Install HomeBrew, and install software listed in Brewfile
