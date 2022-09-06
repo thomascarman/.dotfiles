@@ -30,6 +30,7 @@ return require('packer').startup(function()
         branch = 'v2', -- optional but strongly recommended
     }
     use { 'akinsho/toggleterm.nvim' }
+    use { 'github/copilot.vim' }
 
     -- notes
     use {
