@@ -30,10 +30,11 @@ vim.opt.updatetime = 50
 
 vim.opt.shortmess:append("c")
 
-vim.opt.colorcolumn = "90"
-vim.opt.textwidth = 90
+vim.opt.textwidth = 80
 
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
 
 vim.g.mapleader = " "
+
+vim.g.noshellslash = true
