@@ -49,4 +49,10 @@ return require('packer').startup(function()
             vim.g.vimwiki_hl_cb_checked = 2
         end
     }
+
+    -- games
+    use { 'alec-gibson/nvim-tetris' }
+    use { 'seandewar/nvimesweeper' }
+    use { 'ThePrimeagen/vim-be-good' }
+    use { 'seandewar/killersheep.nvim' }
 end)
