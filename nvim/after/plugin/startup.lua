@@ -7,14 +7,9 @@ require('startup').setup({
         fold_section = false,
         title = 'Header',
         margin = 5,
-        content = {
-            " ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗",
-            " ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║",
-            " ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║",
-            " ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║",
-            " ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║",
-            " ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝",
-        },
+        content = function()
+            return require('startup.headers').hydra_header
+        end,
         highlight = 'Statement',
         default_color = '',
         oldfiles_amount = 0,
@@ -45,7 +40,9 @@ require('startup').setup({
         fold_section = false,
         title = "Footer",
         margin = 5,
-        content = { "startup.nvim" },
+        content = function()
+            return require("startup.functions").packer_plugins()
+        end,
         highlight = "Number",
         default_color = "",
         oldfiles_amount = 0,
