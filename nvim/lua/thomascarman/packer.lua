@@ -38,6 +38,7 @@ return require('packer').startup(function()
     }
     use { 'akinsho/toggleterm.nvim' }
     use { 'github/copilot.vim' }
+    use { 'chentoast/marks.nvim' }
 
     -- notes
     use {
