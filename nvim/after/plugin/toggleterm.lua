@@ -13,6 +13,17 @@ require('toggleterm').setup {
     },
 }
 
+local Terminal  =  require('toggleterm.terminal').Terminal
+local lazygit = Terminal:new({
+    cmd = 'lazygit',
+    hidden = true,
+    direction = 'float',
+})
+
+function _lazygit_toggle()
+    lazygit:toggle()
+end
+
 local Remap = require('thomascarman.remap')
 
 local nnoremap = Remap.nnoremap
@@ -24,3 +35,5 @@ nnoremap("<A-3>", "<cmd>3ToggleTerm<CR>")
 nnoremap("<A-4>", "<cmd>4ToggleTerm<CR>")
 nnoremap("<A-5>", "<cmd>5ToggleTerm<CR>")
 nnoremap("<A-t>", "<C-\\><C-n><cmd>ToggleTermToggleAll<CR>")
+
+nnoremap("<A-g>", "<cmd>lua _lazygit_toggle()<CR>")
