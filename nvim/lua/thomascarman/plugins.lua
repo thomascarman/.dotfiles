@@ -9,7 +9,6 @@ return require('packer').startup(function()
 
     -- Git
     use { 'lewis6991/gitsigns.nvim' }
-    use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 
     -- airline
     use {
