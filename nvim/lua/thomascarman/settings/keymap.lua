@@ -6,8 +6,8 @@ local inoremap = Remap.inoremap
 local tnoremap = Remap.tnoremap
 
 inoremap("jj", "<Esc>")
-nnoremap("<leader>sx", ":split<CR>")
-nnoremap("<leader>sy", ":vsplit<CR>")
+nnoremap("<leader>sh", ":split<CR>")
+nnoremap("<leader>sv", ":vsplit<CR>")
 
 nnoremap("<leader>h", ":wincmd h<CR>")
 nnoremap("<leader>j", ":wincmd j<CR>")
