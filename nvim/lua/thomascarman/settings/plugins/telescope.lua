@@ -11,7 +11,7 @@ require('telescope').setup {
 
 require('telescope').load_extension 'file_browser'
 
-local Remap = require('thomascarman.remap')
+local Remap = require('thomascarman.utils.remap')
 
 local nnoremap = Remap.nnoremap
 local vnoremap = Remap.vnoremap

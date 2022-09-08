@@ -7,7 +7,7 @@ require('hop').setup {
     uppercase_labels = true,
 }
 
-local Remap = require('thomascarman.remap')
+local Remap = require('thomascarman.utils.remap')
 
 local nnoremap = Remap.nnoremap
 
