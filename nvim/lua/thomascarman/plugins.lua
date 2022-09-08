@@ -1,4 +1,4 @@
-return require('packer').startup(function()
+return require('packer').startup(function(use)
     -- Packer can manage itself
     use { 'wbthomason/packer.nvim' }
 
@@ -10,8 +10,8 @@ return require('packer').startup(function()
 
     -- airline
     use {
-        'nvim-lualine/lualine.nvim',
-        requires = { { 'kyazdani42/nvim-web-devicons' }}
+        'kdheepak/tabline.nvim',
+        requires = { 'nvim-lualine/lualine.nvim', 'kyazdani42/nvim-web-devicons', opt = true }
     }
 
     -- navigation
@@ -23,7 +23,7 @@ return require('packer').startup(function()
     use {
         'kyazdani42/nvim-tree.lua',
         requires = { { 'kyazdani42/nvim-web-devicons' }}
-    } 
+    }
 
     -- startup
     use { 'startup-nvim/startup.nvim' }
@@ -67,7 +67,7 @@ return require('packer').startup(function()
                     auto_diary_index = 1
                 }
             }
-            
+
             vim.g.vimwiki_hl_headers = 1
             vim.g.vimwiki_hl_cb_checked = 2
         end
