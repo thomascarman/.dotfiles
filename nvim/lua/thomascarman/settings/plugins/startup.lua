@@ -1,3 +1,20 @@
+local user_bookmarks = vim.g.startup_bookmarks
+local bookmark_texts = { 'Bookmarks', '' }
+local user_bookmark_mappings = {}
+
+if not user_bookmarks then
+    user_bookmarks = {}
+    bookmark_texts = {}
+end
+
+for key, file in pairs(user_bookmarks) do
+    bookmark_texts[#bookmark_texts+1] = key .. ' ' .. file
+end
+
+for key, file in pairs(user_bookmarks) do
+    user_bookmark_mappings[key] = "<cmd>e " .. file .. "<CR>"
+end
+
 require('startup').setup({
     --theme = 'dashboard',
     header = {
@@ -33,6 +50,13 @@ require('startup').setup({
         default_color = "",
         oldfiles_amount = 0,
     },
+    bookmarks = {
+        type = 'text',
+        align = 'center',
+        margin = 5,
+        content = bookmark_texts,
+        highlight = 'String',
+    },
     footer = {
         type = "text",
         oldfiles_directory = false,
@@ -52,7 +76,11 @@ require('startup').setup({
         cursor_column = 0.5,
         empty_lines_between_mappings = true,
         disable_statuslines = true,
-        paddings = {1, 3, 3, 0},
+        paddings = {1, 3, 3, 3, 0},
+        after = function ()
+            require('startup').create_mappings(user_bookmark_mappings)
+            require('startup.utils').oldfiles_mappings()
+        end
     },
     mappings = {
         execute_command = "<CR>",
@@ -65,5 +93,5 @@ require('startup').setup({
         background = "#1f2227",
         folded_section = "#56b6c2",
     },
-    parts = { 'header', 'body', 'footer' },
+    parts = { 'header', 'body', 'bookmarks', 'footer' },
 })
