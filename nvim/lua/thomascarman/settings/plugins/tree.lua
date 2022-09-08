@@ -12,7 +12,7 @@ require'nvim-web-devicons'.setup {
     default = true,
 }
 
-local Remap = require('thomascarman.remap')
+local Remap = require('thomascarman.utils.remap')
 
 local nnoremap = Remap.nnoremap
 
