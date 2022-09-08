@@ -1,2 +1,2 @@
-require('thomascarman.set')
-require('thomascarman.packer')
+require('thomascarman.settings')
+require('thomascarman.plugins')
