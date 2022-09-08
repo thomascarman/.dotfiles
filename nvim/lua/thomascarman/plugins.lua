@@ -4,6 +4,7 @@ return require('packer').startup(function(use)
 
     -- colorscheme
     use { 'gruvbox-community/gruvbox' }
+    use { 'xiyaowong/nvim-transparent' }
 
     -- Git
     use { 'lewis6991/gitsigns.nvim' }
