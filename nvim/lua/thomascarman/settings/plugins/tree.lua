@@ -17,5 +17,6 @@ local Remap = require('thomascarman.utils.remap')
 local nnoremap = Remap.nnoremap
 
 nnoremap('<leader>tt', ':NvimTreeToggle<CR>')
+nnoremap('<leader>to', ':NvimTreeFocus<CR>')
 nnoremap('<leader>tr', ':NvimTreeRefresh<CR>')
 nnoremap('<leader>tf', ':NvimTreeFindFile<CR>')
