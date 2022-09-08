@@ -12,7 +12,7 @@ return require('packer').startup(function()
     use {
         'nvim-lualine/lualine.nvim',
         requires = { { 'kyazdani42/nvim-web-devicons' }}
-    } 
+    }
 
     -- navigation
     use {
@@ -36,6 +36,24 @@ return require('packer').startup(function()
     use { 'akinsho/toggleterm.nvim' }
     use { 'github/copilot.vim' }
     use { 'chentoast/marks.nvim' }
+
+    -- CMP
+    use { "hrsh7th/nvim-cmp" }
+    use { "hrsh7th/cmp-buffer" }
+    use { "hrsh7th/cmp-path" }
+    use { "saadparwaiz1/cmp_luasnip" }
+    use { "hrsh7th/cmp-nvim-lsp" }
+    use { "hrsh7th/cmp-nvim-lua" }
+
+    -- Snippets
+    use { "L3MON4D3/LuaSnip" }
+    use { "rafamadriz/friendly-snippets" }
+
+    -- LSP
+    use { "neovim/nvim-lspconfig" }
+    use { "williamboman/nvim-lsp-installer" }
+    use { "jose-elias-alvarez/null-ls.nvim" }
+    use { "RRethy/vim-illuminate" }
 
     -- notes
     use {
