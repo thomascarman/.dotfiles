@@ -8,7 +8,6 @@ end)
 augroup('vimwikigroup')(function(autocmd)
     autocmd({ 'BufNewFile', 'BufRead' }, { pattern = 'diary.md'}, 'VimwikiDiaryGenerateLinks')
     autocmd({ 'BufNewFile', 'BufRead' }, { pattern = 'Tags.md'}, 'VimwikiGenerateTagLinks')
-     -- still needs some work tosetup somesort of template system
     --autocmd({ 'BufNewFile' }, { pattern = '*/diary/*.md'}, function()
     --    vim.cmd[[%!echo diary]]
     --end)
