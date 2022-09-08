@@ -14,9 +14,15 @@ require('tabline').setup {
     },
 }
 
--- Not found options to set default of show all buffers
--- This is direct copy minus 'false' from the :TabLineToggleShowAllBuffers
---local data = vim.t.tabline_data
---data.show_all_buffers = false
---vim.t.tabline_data = data
---vim.cmd([[redrawtabline]])
+local augroup = require('thomascarman.utils.augroup');
+
+augroup('tablinegroup')(function (autocmd)
+    autocmd({ 'BufRead' }, { pattern = '*' }, function ()
+        local data = vim.t.tabline_data
+        if data.show_all_buffers == true then
+            data.show_all_buffers = false
+            vim.t.tabline_data = data
+            vim.cmd([[redrawtabline]])
+        end
+    end)
+end)
