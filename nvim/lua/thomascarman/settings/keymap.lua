@@ -5,8 +5,6 @@ local vnoremap = Remap.vnoremap
 local inoremap = Remap.inoremap
 local tnoremap = Remap.tnoremap
 
--- nnoremap("<leader>to", ":Ex<CR>")
--- nnoremap("<leader>u", ":UndotreeShow<CR>")
 inoremap("jj", "<Esc>")
 nnoremap("<leader>sx", ":split<CR>")
 nnoremap("<leader>sy", ":vsplit<CR>")
