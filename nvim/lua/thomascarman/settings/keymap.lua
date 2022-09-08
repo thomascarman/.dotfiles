@@ -49,7 +49,7 @@ vnoremap("<C-k>", ":m-2<CR>gv=gv")
 nnoremap("<leader>gs", ":Neogit<CR>")
 
 -- To map <Esc> to exit terminal-mode
-tnoremap("<ESC>", "<C-\\><C-n>")
+tnoremap("<A-c>", "<C-\\><C-n>")
 
 -- To use `ALT+{h,j,k,l}` to navigate windows from any mode
 tnoremap("<A-h>", "<C-\\><C-N><C-w>h")
