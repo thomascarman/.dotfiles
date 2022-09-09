@@ -3,7 +3,11 @@ vim.cmd[[colorscheme gruvbox]]
 vim.cmd[[highlight clear SignColumn]]
 
 local status_ok, transparent = pcall(require, "transparent")
+local enable = false
+if vim.g.neovide then
+    enable = true
+end
 if status_ok then
-    transparent.setup { enable = true }
+    transparent.setup { enable = enable }
 end
 
