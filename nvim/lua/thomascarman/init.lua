@@ -1,3 +1,4 @@
+require 'thomascarman.neovide'
 require 'thomascarman.settings'
 require 'thomascarman.bookmarks'
 require 'thomascarman.plugins'
