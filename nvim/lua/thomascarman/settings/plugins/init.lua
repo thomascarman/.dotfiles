@@ -1,5 +1,6 @@
 require 'thomascarman.settings.plugins.startup'
 require 'thomascarman.settings.plugins.lualine'
+require 'thomascarman.settings.plugins.sessions'
 require 'thomascarman.settings.plugins.marks'
 require 'thomascarman.settings.plugins.nvimtree'
 require 'thomascarman.settings.plugins.toggleterm'
