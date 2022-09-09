@@ -1,5 +1,5 @@
 local user_bookmarks = vim.g.startup_bookmarks
-local bookmark_texts = { 'Bookmarks', '' }
+local bookmark_texts = { ' Bookmarks', '' }
 local user_bookmark_mappings = {}
 
 if not user_bookmarks then
