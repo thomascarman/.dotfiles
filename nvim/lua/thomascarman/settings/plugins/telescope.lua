@@ -10,6 +10,7 @@ require('telescope').setup {
 }
 
 require('telescope').load_extension 'file_browser'
+require('telescope').load_extension 'session-lens'
 
 local Remap = require('thomascarman.utils.remap')
 
@@ -21,16 +22,22 @@ local tnoremap = Remap.tnoremap
 local nmap = Remap.nmap
 
 -- find file
-nnoremap("<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<CR>")
+nnoremap("<leader>ff", "<cmd>Telescope find_files<CR>")
 
 -- find word
-nnoremap("<leader>of", "<cmd>lua require('telescope.builtin').live_grep()<CR>")
+nnoremap("<leader>lg", "<cmd>Telescope live_grep<CR>")
 
--- buffers
-nnoremap("<leader>bf", "<cmd>lua require('telescope.builtin').buffers()<CR>")
+-- recent files
+nnoremap("<leader>of", "<cmd>Telescope oldfiles<CR>")
+
+-- find buffers
+nnoremap("<leader>bf", "<cmd>Telescope buffers<CR>")
 
 -- file browser
 nnoremap("<leader>fb", "<cmd>Telescope file_browser<CR>")
 
+-- find session
+nnoremap("<leader>fs", "<cmd>lua require('session-lens').search_session()<CR>")
+
 -- help
-nnoremap("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<CR>")
+nnoremap("<leader>fh", "<cmd>Telescope help_tags<CR>")
