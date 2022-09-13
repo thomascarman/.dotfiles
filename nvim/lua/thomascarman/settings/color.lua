@@ -11,3 +11,7 @@ if status_ok then
     transparent.setup { enable = enable }
 end
 
+local colorizer_ok, colorizer = pcall(require, "colorizer")
+if colorizer_ok then
+    colorizer.setup()
+end
