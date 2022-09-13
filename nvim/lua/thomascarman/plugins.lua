@@ -94,6 +94,13 @@ return require('packer').startup(function(use)
             vim.g.vimwiki_hl_cb_checked = 2
         end
     }
+    use {
+        "nvim-neorg/neorg",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "nvim-neorg/neorg-telescope",
+        },
+    }
 
     -- games
     use { 'alec-gibson/nvim-tetris' }

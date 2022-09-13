@@ -7,6 +7,6 @@ end
 vim.g.startup_bookmarks = {
     ["D"] = '~/.dotfiles/',
     ["N"] = nvimConfig,
-    ["V"] = '~/.vault/docs/',
+    ["V"] = '~/.vault',
     ["W"] = '~/workspace',
 }

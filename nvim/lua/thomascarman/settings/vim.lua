@@ -36,8 +36,11 @@ vim.opt.smartcase = true
 vim.opt.ignorecase = true
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
 vim.g.noshellslash = true
+
+vim.cmd[[set nofoldenable]]
 
 -- netrw configs
 vim.g.netrw_browse_split = 0
