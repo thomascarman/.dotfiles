@@ -73,6 +73,9 @@ return require('packer').startup(function(use)
     use { "jose-elias-alvarez/null-ls.nvim" }
     use { "RRethy/vim-illuminate" }
 
+    -- treesitter
+    use { "nvim-treesitter/nvim-treesitter" }
+
     -- notes
     use {
         'vimwiki/vimwiki',
