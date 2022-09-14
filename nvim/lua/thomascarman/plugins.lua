@@ -78,29 +78,35 @@ return require('packer').startup(function(use)
     use { "nvim-treesitter/nvim-treesitter" }
 
     -- notes
-    use {
-        'vimwiki/vimwiki',
-        config = function()
-            vim.g.vimwiki_list = {
-                {
-                    path = '~/.vault/docs/',
-                    syntax = 'markdown', ext = '.md',
-                    auto_tags = 1, auto_generate_tags = 0,
-                    auto_diary_index = 1
-                }
-            }
+    --use {
+    --    'vimwiki/vimwiki',
+    --    config = function()
+    --        vim.g.vimwiki_list = {
+    --            {
+    --                path = '~/.vault/docs/',
+    --                syntax = 'markdown', ext = '.md',
+    --                auto_tags = 1, auto_generate_tags = 0,
+    --                auto_diary_index = 1
+    --            }
+    --        }
 
-            vim.g.vimwiki_hl_headers = 1
-            vim.g.vimwiki_hl_cb_checked = 2
-        end
-    }
+    --        vim.g.vimwiki_hl_headers = 1
+    --        vim.g.vimwiki_hl_cb_checked = 2
+    --    end
+    --}
     use {
         "nvim-neorg/neorg",
         requires = {
-            "nvim-lua/plenary.nvim",
-            "nvim-neorg/neorg-telescope",
+            'nvim-lua/plenary.nvim',
+            'nvim-neorg/neorg-telescope',
         },
     }
+    -- use {
+    --     "nvim-orgmode/orgmode",
+    --     config = function()
+    --         require('orgmode').setup{}
+    --     end,
+    -- }
 
     -- games
     use { 'alec-gibson/nvim-tetris' }
