@@ -6,14 +6,16 @@ require('neorg').setup {
                 default_keybinds = true,
             },
         },
-        ["core.integrations.telescope"] = {},
+        --["core.integrations.telescope"] = {},
+        --["core.integrations.nvim-cmp"] = {
+        --    config = { -- Note that this table is optional and doesn't need to be provided
+        --       -- Configuration here
+        --    }
+        --},
         ["core.norg.qol.toc"] = {},
         ["core.norg.concealer"] = {
             config = {
                 icon_preset = 'diamond',
-                adaptive = false,
-                conceallevel = 0,
-                conceal = false,
             }
         },
         ["core.gtd.base"] = {
@@ -21,19 +23,19 @@ require('neorg').setup {
                 workspace = 'work',
             }
         },
+        --["external.gtd-project-tags"] = {},
         ["core.norg.dirman"] = {
             config = {
                 workspaces = {
                     work = "~/.vault/work",
-                    home = "~/.vault/home",
                 },
             },
         },
         ["core.norg.journal"] = {
             config = {
                 strategy = 'flat',
-                journal_folder = 'diary',
-                template_name = 'diary.template.norg',
+                journal_folder = 'journal',
+                template_name = 'journal.template.norg',
             },
         },
     },
@@ -56,3 +58,8 @@ neorg_callbacks.on_event("core.keybinds.events.enable_keybinds", function(_, key
         noremap = true,
     })
 end)
+-- 
+-- local Remap = require('thomascarman.utils.remap')
+-- 
+-- local nnoremap = Remap.nnoremap
+-- nnoremap("<leader>ww", ":NeorgStart<CR>")

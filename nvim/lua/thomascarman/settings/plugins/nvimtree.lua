@@ -4,6 +4,9 @@ require("nvim-tree").setup {
             quit_on_open = true,
         },
     },
+    filters = {
+        dotfiles = true
+    },
 }
 
 require'nvim-web-devicons'.setup {
