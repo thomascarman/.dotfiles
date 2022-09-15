@@ -6,12 +6,12 @@ require('neorg').setup {
                 default_keybinds = true,
             },
         },
-        --["core.integrations.telescope"] = {},
-        --["core.integrations.nvim-cmp"] = {
-        --    config = { -- Note that this table is optional and doesn't need to be provided
-        --       -- Configuration here
-        --    }
-        --},
+        ["core.integrations.telescope"] = {},
+        ["core.integrations.nvim-cmp"] = {
+            config = { -- Note that this table is optional and doesn't need to be provided
+               -- Configuration here
+            }
+        },
         ["core.norg.qol.toc"] = {},
         ["core.norg.concealer"] = {
             config = {
