@@ -1,4 +1,4 @@
-local Remap = require('thomascarman.utils.remap')
+local Remap = require('thomascarman.utils').remap
 
 local nnoremap = Remap.nnoremap
 local vnoremap = Remap.vnoremap
