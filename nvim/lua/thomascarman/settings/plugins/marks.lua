@@ -1,5 +1,5 @@
 require('marks').setup {
-  default_mappings = false,
+  default_mappings = true,
   -- which builtin marks to show. default {}
   --builtin_marks = { ".", "<", ">", "^" },
   -- whether movements cycle back to the beginning/end of buffer. default true
@@ -22,12 +22,16 @@ require('marks').setup {
   -- sign/virttext. Bookmarks can be used to group together positions and quickly move
   -- across multiple buffers. default sign is '!@#$%^&*()' (from 0 to 9), and
   -- default virt_text is "".
-  bookmark_0 = {
-    sign = "⚑",
-    virt_text = "hello world",
-    -- explicitly prompt for a virtual line annotation when setting a bookmark from this group.
-    -- defaults to false.
-    annotate = false,
-  },
+  bookmark_0 = { sign = "⛳" },
+  bookmark_1 = { sign = "🧨" },
+  bookmark_2 = { sign = "📮" },
+  bookmark_3 = { sign = "🧬" },
+  bookmark_4 = { sign = "🧪" },
+  bookmark_5 = { sign = "🍎" },
+  bookmark_6 = { sign = "🧭" },
+  bookmark_7 = { sign = "📰" },
+  bookmark_8 = { sign = "📺" },
+  bookmark_9 = { sign = "🧩" },
+
   mappings = {}
 }
