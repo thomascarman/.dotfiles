@@ -14,7 +14,7 @@ require('tabline').setup {
     },
 }
 
-local augroup = require('thomascarman.utils.augroup');
+local augroup = require('thomascarman.utils').augroup;
 
 augroup('tablinegroup')(function (autocmd)
     autocmd({ 'BufRead' }, { pattern = '*' }, function ()

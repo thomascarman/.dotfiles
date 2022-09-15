@@ -11,7 +11,7 @@ require("nvim-tree").setup {
 
 require'nvim-web-devicons'.setup {
     override = {
-        zsh = {
+        lua = {
             icon = "",
             color = "#428850",
             cterm_color = "65",
@@ -21,11 +21,12 @@ require'nvim-web-devicons'.setup {
     default = true,
 }
 
-local Remap = require('thomascarman.utils.remap')
+local Remap = require('thomascarman.utils').remap
 
 local nnoremap = Remap.nnoremap
 
-nnoremap('<leader>tt', ':NvimTreeToggle<CR>')
 nnoremap('<leader>to', ':NvimTreeFocus<CR>')
+nnoremap('<leader>tt', ':NvimTreeToggle<CR>')
 nnoremap('<leader>tr', ':NvimTreeRefresh<CR>')
 nnoremap('<leader>tf', ':NvimTreeFindFile<CR>')
+

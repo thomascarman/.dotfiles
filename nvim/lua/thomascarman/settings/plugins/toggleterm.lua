@@ -24,7 +24,7 @@ function _lazygit_toggle()
     lazygit:toggle()
 end
 
-local Remap = require('thomascarman.utils.remap')
+local Remap = require('thomascarman.utils').remap
 
 local nnoremap = Remap.nnoremap
 local tnoremap = Remap.tnoremap
