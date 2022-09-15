@@ -58,8 +58,9 @@ neorg_callbacks.on_event("core.keybinds.events.enable_keybinds", function(_, key
         noremap = true,
     })
 end)
--- 
--- local Remap = require('thomascarman.utils.remap')
--- 
--- local nnoremap = Remap.nnoremap
--- nnoremap("<leader>ww", ":NeorgStart<CR>")
+
+local Remap = require('thomascarman.utils').remap
+
+local nnoremap = Remap.nnoremap
+nnoremap("<leader>ww", "<cmd>e ~/.vault/work/index.norg<CR>")
+nnoremap("<leader>w<leader>w", "<cmd>Neorg journal today<CR>")
