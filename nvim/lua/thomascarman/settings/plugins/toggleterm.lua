@@ -1,5 +1,11 @@
+local shell = 'zsh'
+local result = os.execute('zsh --version')
+if result ~= true and result ~= 0 then
+    shell = 'bash'
+end
+
 require('toggleterm').setup {
-    shell =  'bash',
+    shell =  shell,
     close_on_exit = true,
     direction = 'horizontal',
     float_opts = {
