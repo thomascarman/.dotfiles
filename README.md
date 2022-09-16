@@ -70,6 +70,8 @@ ln -s ~/.dotfiles/nvim/ ~/.config/
 
 8. Install HomeBrew, and install software listed in Brewfile
 
+> Not sure if this is setup in proper...
+
 ```shell
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
