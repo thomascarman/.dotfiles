@@ -83,7 +83,7 @@ return require('packer').startup(function(use)
             vim.g.vimwiki_list = {
                 {
                     path = '~/.vault/2023/',
-                    syntax = 'vimwiki', ext = '.wiki',
+                    syntax = 'default', ext = '.wiki',
                     auto_tags = 1, auto_generate_tags = 0,
                     auto_diary_index = 1
                 },
