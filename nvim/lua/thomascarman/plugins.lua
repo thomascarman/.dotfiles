@@ -40,12 +40,6 @@ return require('packer').startup(function(use)
         requires = { { 'kyazdani42/nvim-web-devicons' }}
     }
 
-    -- sessions
-    use {
-        'rmagatti/session-lens',
-        requires = {'rmagatti/auto-session', 'nvim-telescope/telescope.nvim'},
-    }
-
     -- startup
     use { 'startup-nvim/startup.nvim' }
 

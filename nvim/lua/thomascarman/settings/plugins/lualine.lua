@@ -47,7 +47,7 @@ lueline.setup {
   },
   tabline = {
     lualine_a = {},
-    lualine_b = {require('auto-session-library').current_session_name},
+    lualine_b = {},
     lualine_c = {tabline.tabline_buffers},
     lualine_x = {tabline.tabline_tabs},
     lualine_y = {},
