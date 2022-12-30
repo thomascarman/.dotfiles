@@ -15,11 +15,6 @@ require('telescope').load_extension 'session-lens'
 local Remap = require('thomascarman.utils').remap
 
 local nnoremap = Remap.nnoremap
-local vnoremap = Remap.vnoremap
-local inoremap = Remap.inoremap
-local xnoremap = Remap.xnoremap
-local tnoremap = Remap.tnoremap
-local nmap = Remap.nmap
 
 -- find file
 nnoremap("<leader>ff", "<cmd>Telescope find_files<CR>")
