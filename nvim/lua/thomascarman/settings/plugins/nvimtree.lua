@@ -1,4 +1,9 @@
-require("nvim-tree").setup {
+local nvm_tree_ok, nvm_tree = pcall(require, 'nvm-tree')
+if not nvm_tree_ok then
+    return
+end
+
+nvm_tree.setup {
     actions = {
         open_file = {
             quit_on_open = true,
