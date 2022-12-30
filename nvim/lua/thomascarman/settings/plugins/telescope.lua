@@ -1,4 +1,9 @@
-require('telescope').setup {
+local telescope_ok, telescope = pcall(require, 'telescope')
+if not telescope_ok then
+    return
+end
+
+telescope.setup {
     extenstions = {
         file_browser = {
             theme = 'ivy',
@@ -9,8 +14,8 @@ require('telescope').setup {
     },
 }
 
-require('telescope').load_extension 'file_browser'
-require('telescope').load_extension 'session-lens'
+telescope.load_extension 'file_browser'
+telescope.load_extension 'session-lens'
 
 local Remap = require('thomascarman.utils').remap
 
