@@ -1,4 +1,9 @@
-require('tabline').setup {
+local tabline_ok, tabline = pcall(require, 'tabline')
+if not tabline_ok then
+    return
+end
+
+tabline.setup {
     enable = false,
     options = {
         section_separators = {'', ''},

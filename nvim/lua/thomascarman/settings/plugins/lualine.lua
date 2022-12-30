@@ -1,6 +1,16 @@
 require 'thomascarman.settings.plugins.tabline'
 
-require('lualine').setup {
+local tabline_ok, tabline = pcall(require, 'tabline')
+if not tabline_ok then
+    return
+end
+
+local lueline_ok, lueline = pcall(require, 'lueline')
+if not lueline_ok then
+    return
+end
+
+lueline.setup {
   options = {
     icons_enabled = true,
     theme = 'gruvbox',
@@ -38,8 +48,8 @@ require('lualine').setup {
   tabline = {
     lualine_a = {},
     lualine_b = {require('auto-session-library').current_session_name},
-    lualine_c = {require('tabline').tabline_buffers},
-    lualine_x = {require('tabline').tabline_tabs},
+    lualine_c = {tabline.tabline_buffers},
+    lualine_x = {tabline.tabline_tabs},
     lualine_y = {},
     lualine_z = {}
   },
