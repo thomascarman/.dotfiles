@@ -5,12 +5,12 @@ if not tabline_ok then
     return
 end
 
-local lueline_ok, lueline = pcall(require, 'lueline')
-if not lueline_ok then
+local lualine_ok, lualine = pcall(require, 'lualine')
+if not lualine_ok then
     return
 end
 
-lueline.setup {
+lualine.setup {
   options = {
     icons_enabled = true,
     theme = 'gruvbox',
