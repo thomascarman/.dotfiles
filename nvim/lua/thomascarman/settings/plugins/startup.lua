@@ -1,3 +1,8 @@
+local startup_ok, startup = pcall(require, 'startup')
+if not startup_ok then
+    return
+end
+
 local user_bookmarks = vim.g.startup_bookmarks
 local bookmark_texts = { ' Bookmarks', '' }
 local user_bookmark_mappings = {}
@@ -15,7 +20,7 @@ for key, file in pairs(user_bookmarks) do
     user_bookmark_mappings[key] = "<cmd>e " .. file .. "<CR>"
 end
 
-require('startup').setup({
+startup.setup({
     --theme = 'dashboard',
     header = {
         type = 'text',
