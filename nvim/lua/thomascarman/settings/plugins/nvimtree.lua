@@ -1,9 +1,9 @@
-local nvm_tree_ok, nvm_tree = pcall(require, 'nvm-tree')
-if not nvm_tree_ok then
+local nvim_tree_ok, nvim_tree = pcall(require, 'nvim-tree')
+if not nvim_tree_ok then
     return
 end
 
-nvm_tree.setup {
+nvim_tree.setup {
     actions = {
         open_file = {
             quit_on_open = true,
