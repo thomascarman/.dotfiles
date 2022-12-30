@@ -1,10 +1,15 @@
+local toggleterm_ok, toggleterm = pcall(require, 'toggleterm')
+if not toggleterm_ok then
+    return
+end
+
 local shell = 'zsh'
 local result = os.execute('zsh --version')
 if result ~= true and result ~= 0 then
     shell = 'bash'
 end
 
-require('toggleterm').setup {
+toggleterm.setup {
     shell =  shell,
     close_on_exit = true,
     direction = 'horizontal',
@@ -33,7 +38,6 @@ end
 local Remap = require('thomascarman.utils').remap
 
 local nnoremap = Remap.nnoremap
-local tnoremap = Remap.tnoremap
 
 nnoremap("<A-1>", "<cmd>ToggleTerm<CR>")
 nnoremap("<A-2>", "<cmd>2ToggleTerm<CR>")
