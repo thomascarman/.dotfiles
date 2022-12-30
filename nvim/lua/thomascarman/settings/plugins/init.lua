@@ -9,5 +9,4 @@ require 'thomascarman.settings.plugins.hop'
 require 'thomascarman.settings.plugins.gitsigns'
 require 'thomascarman.settings.plugins.iconpicker'
 require 'thomascarman.settings.plugins.treesitter'
---require 'thomascarman.settings.plugins.neorg'
 
