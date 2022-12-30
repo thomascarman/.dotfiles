@@ -24,6 +24,9 @@ local nmap = Remap.nmap
 -- find file
 nnoremap("<leader>ff", "<cmd>Telescope find_files<CR>")
 
+-- find git files
+nnoremap("<leader>fg", "<cmd>Telescope git_files<CR>")
+
 -- find word
 nnoremap("<leader>lg", "<cmd>Telescope live_grep<CR>")
 
