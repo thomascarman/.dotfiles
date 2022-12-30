@@ -45,14 +45,7 @@ return require('packer').startup(function(use)
 
     -- Emoji
     use "stevearc/dressing.nvim"
-    use {
-        "ziontee113/icon-picker.nvim",
-        config = function()
-            require("icon-picker").setup({
-                disable_legacy_commands = true
-            })
-        end,
-    }
+    use "ziontee113/icon-picker.nvim"
 
     -- utils
     use {
