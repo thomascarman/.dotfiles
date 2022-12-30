@@ -1,4 +1,9 @@
-require('marks').setup {
+local marks_ok, marks = pcall(require, 'marks')
+if not marks_ok then
+    return
+end
+
+marks.setup {
   default_mappings = true,
   -- which builtin marks to show. default {}
   --builtin_marks = { ".", "<", ">", "^" },
