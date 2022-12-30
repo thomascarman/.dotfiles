@@ -1,4 +1,9 @@
-require('nvim-treesitter.configs').setup {
+local nvim_treesitter_ok, nvim_treesitter = pcall(require, 'nvim-treesitter.configs')
+if not nvim_treesitter_ok then
+    return
+end
+
+nvim_treesitter.setup {
     -- A list of parser names, or "all"
     ensure_installed = {
         'html',
