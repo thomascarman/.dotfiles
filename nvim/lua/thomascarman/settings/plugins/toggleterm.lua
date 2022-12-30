@@ -26,7 +26,7 @@ local lazygit = Terminal:new({
     direction = 'float',
 })
 
-function _lazygit_toggle()
+function Lazygit_toggle()
     lazygit:toggle()
 end
 
@@ -42,4 +42,4 @@ nnoremap("<A-4>", "<cmd>4ToggleTerm<CR>")
 nnoremap("<A-5>", "<cmd>5ToggleTerm<CR>")
 nnoremap("<A-t>", "<C-\\><C-n><cmd>ToggleTermToggleAll<CR>")
 
-nnoremap("<A-g>", "<cmd>lua _lazygit_toggle()<CR>")
+nnoremap("<A-g>", "<cmd>lua Lazygit_toggle()<CR>")
