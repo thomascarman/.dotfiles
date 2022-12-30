@@ -1,4 +1,9 @@
-require('hop').setup {
+local hop_ok, hop = pcall(require, 'hop')
+if not hop_ok then
+    return
+end
+
+hop.setup {
     keys = 'abcdefghijklmnopqrstuvwxyz;',
     case_insensitive = true,
     multi_windows = true,
