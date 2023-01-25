@@ -15,6 +15,7 @@ telescope.setup {
 }
 
 telescope.load_extension 'file_browser'
+telescope.load_extension 'harpoon'
 
 local Remap = require('thomascarman.utils').remap
 

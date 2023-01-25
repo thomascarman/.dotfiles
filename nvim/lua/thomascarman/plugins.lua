@@ -39,6 +39,10 @@ return require('packer').startup(function(use)
         'kyazdani42/nvim-tree.lua',
         requires = { { 'kyazdani42/nvim-web-devicons' }}
     }
+    use {
+        'ThePrimeagen/harpoon',
+        requires = { { 'nvim-lua/plenary.nvim' }}
+    }
 
     -- startup
     use { 'startup-nvim/startup.nvim' }
