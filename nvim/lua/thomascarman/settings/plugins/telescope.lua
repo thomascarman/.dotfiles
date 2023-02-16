@@ -40,7 +40,10 @@ nnoremap("<leader>bf", "<cmd>Telescope buffers<CR>")
 nnoremap("<leader>fb", "<cmd>Telescope file_browser<CR>")
 
 -- find session
-nnoremap("<leader>fs", "<cmd>lua require('session-lens').search_session()<CR>")
+nnoremap("<leader>fs", "<cmd>SessionManager load_session<CR>")
 
 -- help
 nnoremap("<leader>fh", "<cmd>Telescope help_tags<CR>")
+
+-- harpoon
+nnoremap("<leader>fv", "<cmd>Telescope harpoon marks<CR>")
