@@ -11,4 +11,4 @@ GuiTabline 0
 GuiPopupmenu 0
 
 " Open maximized
-call GuiWindowMaximized(1)
+" call GuiWindowMaximized(1)
