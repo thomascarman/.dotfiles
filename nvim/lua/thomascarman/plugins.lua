@@ -44,6 +44,12 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' }}
     }
 
+    -- sessions
+    use {
+        'Shatur/neovim-session-manager',
+        requires = { { 'nvim-lua/plenary.nvim' }}
+    }
+
     -- startup
     use { 'startup-nvim/startup.nvim' }
 
