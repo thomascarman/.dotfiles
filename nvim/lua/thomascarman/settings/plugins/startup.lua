@@ -50,7 +50,7 @@ startup.setup({
             { " File Browser", "Telescope file_browser", "<leader>fb" },
             { " Colorschemes", "Telescope colorscheme", "<leader>cs" },
             { " New File", "lua require'startup'.new_file()", "<leader>nf" },
-            { "⌚Sessions", "lua require'session-lens'.search_session()", "<leader>fs" },
+            { "⌚Sessions", "SessionManager load_session", "<leader>fs" },
         },
         highlight = "String",
         default_color = "",
