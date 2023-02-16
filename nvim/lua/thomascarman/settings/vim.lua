@@ -33,6 +33,7 @@ vim.opt.updatetime = 50
 vim.opt.shortmess:append("c")
 
 vim.opt.textwidth = 80
+vim.cmd[[set colorcolumn=80]]
 
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
@@ -43,6 +44,9 @@ vim.g.maplocalleader = "\\"
 vim.g.noshellslash = true
 
 vim.cmd[[set nofoldenable]]
+
+-- Allows for normal Paste key to paste from OS Clipboard
+vim.cmd[[set clipboard+=unnamedplus]]
 
 -- netrw configs
 vim.g.netrw_browse_split = 0
