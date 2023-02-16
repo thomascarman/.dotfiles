@@ -9,6 +9,11 @@ inoremap("jj", "<Esc>")
 nnoremap("<leader>sh", ":split<CR>")
 nnoremap("<leader>sv", ":vsplit<CR>")
 
+nnoremap("<PageUp>", "<C-u>zz")
+nnoremap("<PageDown>", "<C-d>zz")
+nnoremap("<C-u>", "<C-u>zz")
+nnoremap("<C-d>", "<C-d>zz")
+
 nnoremap("<leader>h", "<cmd>silent wincmd h<CR>")
 nnoremap("<leader>j", "<cmd>silent wincmd j<CR>")
 nnoremap("<leader>l", "<cmd>silent wincmd l<CR>")
