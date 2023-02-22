@@ -87,6 +87,9 @@ return require('packer').startup(function(use)
     -- treesitter
     use { "nvim-treesitter/nvim-treesitter" }
 
+    -- formating
+    use { "MunifTanjim/prettier.nvim" }
+
     -- notes
     use {
         'vimwiki/vimwiki',
