@@ -4,7 +4,6 @@ if not status_ok then
 end
 
 local servers = {
-  "sumneko_lua",
   "cssls",
   "html",
   "tsserver",
@@ -12,6 +11,7 @@ local servers = {
   "bashls",
   "jsonls",
   "yamlls",
+  "svelte",
 }
 
 lsp_installer.setup()
@@ -30,8 +30,8 @@ for _, server in pairs(servers) do
   }
 
   if server == "sumneko_lua" then
-    local sumneko_opts = require "thomascarman.lsp.settings.sumneko_lua"
-    opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
+    local lsp_opts = require "thomascarman.lsp.settings.lsp_ls"
+    opts = vim.tbl_deep_extend("force", lsp_opts, opts)
   end
   
   if server == "pyright" then
