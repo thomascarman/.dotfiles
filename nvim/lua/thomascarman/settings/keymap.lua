@@ -29,6 +29,7 @@ nnoremap("<silent> <localleader>_", ":vertical resize -5<CR>")
 nnoremap("<silent> <localleader>>", ":resize +5<CR>")
 nnoremap("<silent> <localleader>,", ":resize -5<CR>")
 
+-- Using tabs
 nnoremap("<leader>1", "1gt<CR>")
 nnoremap("<leader>2", "2gt<CR>")
 nnoremap("<leader>3", "3gt<CR>")
@@ -44,7 +45,6 @@ nnoremap("<leader>+", ":tabmove+<CR>")
 nnoremap("<leader>-", ":tabp<CR>")
 nnoremap("<leader>_", ":tabmove-<CR>")
 nnoremap("<C-n>", ":tabnew<CR>")
-nnoremap("<S-n>", ":tabclose<CR>")
 
 nnoremap("<C-j>", ":m+<CR>==")
 nnoremap("<C-k>", ":m-2<CR>==")
