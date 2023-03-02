@@ -33,3 +33,9 @@ augroup('tablinegroup')(function (autocmd)
         end
     end)
 end)
+
+local Remap = require('thomascarman.utils').remap
+local nnoremap = Remap.nnoremap
+
+-- Quick Rename of tabline Tab
+nnoremap("<leader>rt", ":TablineTabRename ")
