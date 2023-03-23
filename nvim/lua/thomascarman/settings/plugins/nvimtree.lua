@@ -4,6 +4,10 @@ if not nvim_tree_ok then
 end
 
 nvim_tree.setup {
+    git = {
+        enable = true,
+        timeout = 4000
+    },
     actions = {
         open_file = {
             quit_on_open = true,
