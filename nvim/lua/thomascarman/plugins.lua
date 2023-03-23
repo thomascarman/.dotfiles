@@ -18,7 +18,8 @@ return require('packer').startup(function(use)
 
     -- colorscheme
     use { 'gruvbox-community/gruvbox' }
-    use { 'norcalli/nvim-colorizer.lua' }
+    --use { 'norcalli/nvim-colorizer.lua' }
+    use { 'brenoprata10/nvim-highlight-colors' }
 
     -- Git
     use { 'lewis6991/gitsigns.nvim' }
