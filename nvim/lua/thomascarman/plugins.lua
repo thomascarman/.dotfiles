@@ -44,6 +44,7 @@ return require('packer').startup(function(use)
         'ThePrimeagen/harpoon',
         requires = { { 'nvim-lua/plenary.nvim' }}
     }
+    use { 'petertriho/nvim-scrollbar' }
 
     -- sessions
     use {
@@ -57,6 +58,7 @@ return require('packer').startup(function(use)
     -- Emoji
     use "stevearc/dressing.nvim"
     use "ziontee113/icon-picker.nvim"
+    use { 'folke/todo-comments.nvim' }
 
     -- utils
     use {
