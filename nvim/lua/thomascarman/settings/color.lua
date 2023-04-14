@@ -17,4 +17,4 @@ end
 vim.g.gruvbox_contrast_light = 'soft'
 vim.g.gruvbox_contrast_dark = 'medium'
 
-vim.opt.background = "light"
+vim.opt.background = "dark"
