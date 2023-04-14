@@ -27,7 +27,7 @@ return require('packer').startup(function(use)
     -- airline
     use {
         'kdheepak/tabline.nvim',
-        requires = { 'nvim-lualine/lualine.nvim', 'kyazdani42/nvim-web-devicons', opt = true }
+        requires = { 'nvim-lualine/lualine.nvim', 'nvim-tree/nvim-web-devicons', opt = true }
     }
 
     -- navigation
