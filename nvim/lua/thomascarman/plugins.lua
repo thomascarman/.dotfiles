@@ -80,6 +80,11 @@ return require('packer').startup(function(use)
     use { 'github/copilot.vim' }
     use { 'chentoast/marks.nvim' }
 
+    use {
+      "rest-nvim/rest.nvim",
+      requires = { "nvim-lua/plenary.nvim" },
+    }
+
     -- CMP
     use { "hrsh7th/nvim-cmp" }
     use { "hrsh7th/cmp-buffer" }
