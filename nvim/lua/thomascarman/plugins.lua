@@ -133,6 +133,14 @@ return require('packer').startup(function(use)
         end
     }
 
+    use {
+        "epwalsh/obsidian.nvim",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "hrsh7th/nvim-cmp",
+        }
+    }
+
     -- games
     use { 'alec-gibson/nvim-tetris' }
     use { 'seandewar/nvimesweeper' }
