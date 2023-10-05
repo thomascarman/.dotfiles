@@ -80,6 +80,8 @@ return require('packer').startup(function(use)
     use { 'github/copilot.vim' }
     use { 'chentoast/marks.nvim' }
 
+    use { 'OmniSharp/omnisharp-vim' }
+
     use {
       "rest-nvim/rest.nvim",
       requires = { "nvim-lua/plenary.nvim" },
@@ -114,12 +116,6 @@ return require('packer').startup(function(use)
         'vimwiki/vimwiki',
         config = function()
             vim.g.vimwiki_list = {
-                {
-                    path = '~/.vault/2023/',
-                    syntax = 'default', ext = '.wiki',
-                    auto_tags = 1, auto_generate_tags = 0,
-                    auto_diary_index = 1
-                },
                 {
                     path = '~/.vault/docs/',
                     syntax = 'markdown', ext = '.md',
