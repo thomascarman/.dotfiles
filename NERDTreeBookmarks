@@ -1,5 +1,6 @@
-notes ~/.vault/docs/
-dotfiles ~/.dotfiles/
+dotfiles ~/.dotfiles
 bashrc ~/.dotfiles/bashrc
 zshrc ~/.dotfiles/zshrc
 vimrc ~/.dotfiles/vimrc
+
+notes ~/.vault/docs/
