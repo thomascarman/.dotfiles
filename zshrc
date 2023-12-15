@@ -121,7 +121,7 @@ alias chat="irssi"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -la"
 alias calendar="vim -c \"Calendar\""
-alias notes="cd ~/.vault/docs && nvim index.md"
+alias notes="cd /mnt/c/users/go1ta/.vault"
 # alias vi="nvim"
 # alias vim="nvim"
 alias xp="explorer.exe"
@@ -138,3 +138,17 @@ alias tasks="task"
 # Bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/carmant/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+# bun completions
+[ -s "/home/carmant/.bun/_bun" ] && source "/home/carmant/.bun/_bun"
