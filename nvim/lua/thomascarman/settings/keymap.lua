@@ -51,6 +51,8 @@ nnoremap("<C-k>", ":m-2<CR>==")
 vnoremap("<C-j>", ":m'>+<CR>gv=gv")
 vnoremap("<C-k>", ":m-2<CR>gv=gv")
 
+nnoremap("<C-s>", ":wa<CR>")
+
 -- To map <Esc> to exit terminal-mode
 tnoremap("<A-c>", "<C-\\><C-n>")
 
