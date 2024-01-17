@@ -136,6 +136,9 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- ledger
+    use { 'ledger/vim-ledger' }
+
     -- games
     use { 'alec-gibson/nvim-tetris' }
     use { 'seandewar/nvimesweeper' }
