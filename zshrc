@@ -90,7 +90,8 @@ export PATH="$HOME/.deno/bin:$PATH"
 # export PATH="$HOME/.oh-my-zsh\plugins\brew:$PATH"
 # eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 export BROWSER="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+# No Longer need as WSL Takes care of DISPLAY
+#   export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 export LIBGL_ALWAYS_INDIRECT=true
 
 # You may need to manually set your language environment
