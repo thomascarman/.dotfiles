@@ -23,16 +23,6 @@ return require('packer').startup(function(use)
 
     -- Git
     use { 'lewis6991/gitsigns.nvim' }
-    use {
-        'pwntester/octo.nvim',
-        requires = {
-            { 'nvim-lua/plenary.nvim' },
-            { 'nvim-tree/nvim-web-devicons' },
-        },
-        config = function ()
-            require('octo').setup()
-        end
-    }
 
     -- airline
     use {
@@ -78,13 +68,11 @@ return require('packer').startup(function(use)
     use { 'akinsho/toggleterm.nvim' }
     use { 'github/copilot.vim' }
     use { 'chentoast/marks.nvim' }
-
-    use { 'OmniSharp/omnisharp-vim' }
-
     use {
-      "rest-nvim/rest.nvim",
-      requires = { "nvim-lua/plenary.nvim" },
+        "rest-nvim/rest.nvim",
+        requires = { 'nvim-lua/plenary.nvim' }
     }
+    use { "kylechui/nvim-surround" }
 
     -- CMP
     use { "hrsh7th/nvim-cmp" }
