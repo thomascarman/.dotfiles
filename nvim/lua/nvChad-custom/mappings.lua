@@ -53,9 +53,10 @@ M.nvterm = {
   },
 }
 
-M.icons = {
+M.telescope = {
   n = {
     ["<leader><leader>i"] = { "<cmd>Telescope emoji<cr>", "Open Icon Search" },
+    ["<leader>fg"] = { "<cmd> Telescope git_files <CR>", "Find Git files" },
   },
 }
 
