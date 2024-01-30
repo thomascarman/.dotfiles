@@ -50,8 +50,15 @@ local plugins = {
   },
 
   -- Install a plugin
-  { "github/copilot.vim", lazy = false },
-  { "MunifTanjim/prettier.nvim", lazy = false, config = fun },
+  { "github/copilot.vim",        lazy = false },
+  { "MunifTanjim/prettier.nvim", lazy = false },
+  {
+    "kylechui/nvim-surround",
+    lazy = false,
+    config = function()
+      require("nvim-surround").setup()
+    end
+  },
 
   {
     "max397574/better-escape.nvim",
