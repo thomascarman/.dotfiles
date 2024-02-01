@@ -2,7 +2,7 @@
 inoremap <silent> <S-Insert> <C-R>+
 
 " Font
-GuiFont! RobotoMono NF:h12:n
+GuiFont! JetBrainsMonoNL Nerd Font:h12:n
 
 " Remove tabline
 GuiTabline 0

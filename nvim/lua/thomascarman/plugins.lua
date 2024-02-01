@@ -1,9 +1,9 @@
 local ensure_packer = function()
     local fn = vim.fn
-    local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+    local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
     if fn.empty(fn.glob(install_path)) > 0 then
-        fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-        vim.cmd [[packadd packer.nvim]]
+        fn.system({ 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path })
+        --        vim.cmd [[packadd packer.nvim]]
         return true
     end
     return false
@@ -23,16 +23,6 @@ return require('packer').startup(function(use)
 
     -- Git
     use { 'lewis6991/gitsigns.nvim' }
-    use {
-        'pwntester/octo.nvim',
-        requires = {
-            { 'nvim-lua/plenary.nvim' },
-            { 'nvim-tree/nvim-web-devicons' },
-        },
-        config = function ()
-            require('octo').setup()
-        end
-    }
 
     -- airline
     use {
@@ -48,18 +38,18 @@ return require('packer').startup(function(use)
     use { "nvim-telescope/telescope-file-browser.nvim" }
     use {
         'nvim-tree/nvim-tree.lua',
-        requires = { { 'nvim-tree/nvim-web-devicons' }}
+        requires = { { 'nvim-tree/nvim-web-devicons' } }
     }
     use {
         'ThePrimeagen/harpoon',
-        requires = { { 'nvim-lua/plenary.nvim' }}
+        requires = { { 'nvim-lua/plenary.nvim' } }
     }
     use { 'petertriho/nvim-scrollbar' }
 
     -- sessions
     use {
         'Shatur/neovim-session-manager',
-        requires = { { 'nvim-lua/plenary.nvim' }}
+        requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
     -- startup
@@ -78,13 +68,11 @@ return require('packer').startup(function(use)
     use { 'akinsho/toggleterm.nvim' }
     use { 'github/copilot.vim' }
     use { 'chentoast/marks.nvim' }
-
-    use { 'OmniSharp/omnisharp-vim' }
-
     use {
-      "rest-nvim/rest.nvim",
-      requires = { "nvim-lua/plenary.nvim" },
+        "rest-nvim/rest.nvim",
+        requires = { 'nvim-lua/plenary.nvim' }
     }
+    use { "kylechui/nvim-surround" }
 
     -- CMP
     use { "hrsh7th/nvim-cmp" }
@@ -117,12 +105,13 @@ return require('packer').startup(function(use)
             vim.g.vimwiki_list = {
                 {
                     path = '~/.vault/docs/',
-                    syntax = 'markdown', ext = '.md',
-                    auto_tags = 1, auto_generate_tags = 0,
+                    syntax = 'markdown',
+                    ext = '.md',
+                    auto_tags = 1,
+                    auto_generate_tags = 0,
                     auto_diary_index = 1
                 }
             }
-
             vim.g.vimwiki_hl_headers = 1
             vim.g.vimwiki_hl_cb_checked = 2
         end
