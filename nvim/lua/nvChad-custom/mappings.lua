@@ -55,8 +55,8 @@ M.nvterm = {
 
 M.gitsigns = {
 	n = {
-		["<leader>sb"] = { "<cmd>gitsigns stage_buffer<cr>", "Stage Buffer" },
-		["<leader>sh"] = { "<cmd>gitsigns stage_hunk<cr>", "Stage Hunk" },
+		["<leader>sb"] = { "<cmd>Gitsigns stage_buffer<cr>", "Stage Buffer" },
+		["<leader>sl"] = { "<cmd>Gitsigns stage_hunk<cr>", "Stage Hunk" },
 	},
 }
 
