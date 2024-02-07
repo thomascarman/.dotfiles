@@ -1,5 +1,5 @@
 # list of packages separated by spaces
-PACKAGES="git neovim tmux ranger lazygit github-cli gcc"
+PACKAGES="git neovim tmux ranger lazygit github-cli glibc linux-api-headers"
 
 echo -n "Checking permissions: "
 if [ "$(id -ru)" == "0" ]; then
