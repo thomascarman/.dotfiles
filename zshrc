@@ -80,7 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git nvm tmux)
-# ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
 
@@ -155,3 +155,7 @@ esac
 # pnpm end
 # bun completions
 [ -s "/home/carmant/.bun/_bun" ] && source "/home/carmant/.bun/_bun"
+eval "$(zoxide init zsh)"
+
+# golang
+export PATH=$PATH:/usr/local/go/bin
