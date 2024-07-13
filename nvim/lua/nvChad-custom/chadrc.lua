@@ -2,44 +2,56 @@
 local M = {}
 
 -- Path to overriding theme and highlights files
-local highlights = require "custom.highlights"
+local highlights = require("configs.highlights")
 
 M.ui = {
-  theme = "gruvbox",
-  theme_toggle = { "gruvbox", "gruvbox_light" },
+	theme = "gruvchad",
+	theme_toggle = { "gruvchad", "gruvchad_light" },
 
-  hl_override = highlights.override,
-  hl_add = highlights.add,
+	hl_override = highlights.override,
+	hl_add = highlights.add,
+	-- transparency = true,
 
-  nvdash = {
-    load_on_startup = true,
-    header = {
-      [[                                          /$$              ]],
-      [[                                         |__/              ]],
-      [[ /$$$$$$$   /$$$$$$   /$$$$$$  /$$    /$$ /$$ /$$$$$$/$$$$ ]],
-      [[| $$__  $$ /$$__  $$ /$$__  $$|  $$  /$$/| $$| $$_  $$_  $$]],
-      [[| $$  \ $$| $$$$$$$$| $$  \ $$ \  $$/$$/ | $$| $$ \ $$ \ $$]],
-      [[| $$  | $$| $$_____/| $$  | $$  \  $$$/  | $$| $$ | $$ | $$]],
-      [[| $$  | $$|  $$$$$$$|  $$$$$$/   \  $/   | $$| $$ | $$ | $$]],
-      [[|__/  |__/ \_______/ \______/     \_/    |__/|__/ |__/ |__/]],
-    },
+	nvdash = {
+		load_on_startup = true,
+		header = {
+			[[                                          /$$              ]],
+			[[                                         |__/              ]],
+			[[ /$$$$$$$   /$$$$$$   /$$$$$$  /$$    /$$ /$$ /$$$$$$/$$$$ ]],
+			[[| $$__  $$ /$$__  $$ /$$__  $$|  $$  /$$/| $$| $$_  $$_  $$]],
+			[[| $$  \ $$| $$$$$$$$| $$  \ $$ \  $$/$$/ | $$| $$ \ $$ \ $$]],
+			[[| $$  | $$| $$_____/| $$  | $$  \  $$$/  | $$| $$ | $$ | $$]],
+			[[| $$  | $$|  $$$$$$$|  $$$$$$/   \  $/   | $$| $$ | $$ | $$]],
+			[[|__/  |__/ \_______/ \______/     \_/    |__/|__/ |__/ |__/]],
+		},
 
-    buttons = {
-      { "  Find File", "<leader> ff", "Telescope find_files" },
-      { "󰈚  Recent Files", "<leader> fo", "Telescope oldfiles" },
-      { "󰈭  Find Word", "<leader> fw", "Telescope live_grep" },
-      { "  Bookmarks", "<leader> ma", "Telescope marks" },
-      { "  Themes", "<leader> th", "Telescope themes" },
-      { "  Mappings", "<leader> ch", "NvCheatsheet" },
-    },
-  },
+		buttons = {
+			{ "  Find File", "<leader> ff", "Telescope find_files" },
+			{ "󰈚  Recent Files", "<leader> fo", "Telescope oldfiles" },
+			{ "󰈭  Find Word", "<leader> fw", "Telescope live_grep" },
+			{ "  Bookmarks", "<leader> ma", "Telescope marks" },
+			{ "  Themes", "<leader> th", "Telescope themes" },
+			{ "  Mappings", "<leader> ch", "NvCheatsheet" },
+		},
+	},
 
-  telescope = { style = "bordered" }, -- borderless / bordered
+	telescope = { style = "bordered" }, -- borderless / bordered
+
+	term = {
+		sizes = { sp = 0.3, vsp = 0.5 },
+		float = {
+			relative = "editor",
+			row = 0.05,
+			col = 0.1,
+			width = 0.8,
+			height = 0.8,
+			border = "double",
+		},
+	},
 }
 
-M.plugins = "custom.plugins"
+M.term = {}
 
--- check core.mappings for table structure
-M.mappings = require "custom.mappings"
+M.plugins = "custom.configs.overrides"
 
 return M
