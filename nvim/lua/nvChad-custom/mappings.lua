@@ -152,7 +152,7 @@ map("n", "<leader>td", gitsigns.toggle_deleted, { desc = "Git Toggle Deleted" })
 map("n", "<leader>gd", gitsigns.diffthis, { desc = "Git View Git Diff" })
 map("n", "<leader>gD", function()
 	gitsigns.diffthis("~")
-end, { desc = "Git View Diff ~" })
+end, { desc = "Git View Diff Origin" })
 
 -- Git Telescope
 map("n", "<leader>fg", "<cmd>Telescope git_files <CR>", { desc = "Git Find Git files" })
