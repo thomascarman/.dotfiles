@@ -33,6 +33,11 @@ map("n", "<PageDown>", "<C-d>zz", { desc = "Scroll Down" })
 map("n", "<C-u>", "<C-u>zz", { desc = "Scroll Up" })
 map("n", "<C-d>", "<C-d>zz", { desc = "Scroll Down" })
 
+-- Todo Lists
+map("n", "<leader>tl", "<cmd>TodoLocList<cr>", { desc = "TODO Loc List" })
+map("n", "<leader>tq", "<cmd>TodoQuickFix<cr>", { desc = "TODO Quick Fix" })
+map("n", "<leader>tt", "<cmd>TodoTelescope<cr>", { desc = "TODO Telescope" })
+
 -- hop navigation
 map("n", "f", function()
 	require("hop").hint_char1({ direction = require("hop.hint").hint_anywhere, current_line_only = false })
