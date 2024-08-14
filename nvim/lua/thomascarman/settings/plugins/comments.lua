@@ -3,15 +3,6 @@ if not comments_ok then
 	return
 end
 
--- FIX:
--- TODO:
--- HACK:
--- WARN:
--- PERF:
--- NOTE:
--- TEST:
--- BUG:
-
 comments.setup({
 	keywords = {
 		FIX = {
