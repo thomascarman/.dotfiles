@@ -19,6 +19,15 @@ map("n", "<leader>j", "<C-w>j")
 map("n", "<leader>k", "<C-w>k")
 map("n", "<leader>l", "<C-w>l")
 
+-- Alteratives for Changing Buffers
+map("n", "<leader><tab>", function()
+	require("nvchad.tabufline").next()
+end, { desc = "buffer goto next" })
+
+map("n", "<leader><S-tab>", function()
+	require("nvchad.tabufline").prev()
+end, { desc = "buffer goto prev" })
+
 -- screen splitting
 map("n", "<leader>sh", "<cmd>split<cr>", { desc = "Window Horz plit" })
 map("n", "<leader>sv", "<cmd>vsplit<cr>", { desc = "Window Vert Split" })
