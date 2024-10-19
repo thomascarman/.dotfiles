@@ -22,7 +22,7 @@ M.ui = {
 			icon = "󱓻",
 		},
 	},
-	telescope = { style = "bordered" }, -- borderless / bordered
+	telescope = { style = "borderless" }, -- borderless / bordered
 }
 
 M.nvdash = {
