@@ -127,6 +127,11 @@ local plugins = {
 			vim.treesitter.language.register("markdown", "vimwiki")
 		end,
 	},
+	{
+		"shortcuts/no-neck-pain.nvim",
+		version = "*",
+		lazy = false,
+	},
 
 	{ "alec-gibson/nvim-tetris", lazy = false },
 	{ "seandewar/nvimesweeper", lazy = false },
