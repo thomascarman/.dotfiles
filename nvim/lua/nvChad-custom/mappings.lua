@@ -189,3 +189,23 @@ end, { desc = "Find Functions" })
 map("n", "<leader><leader>fc", function()
 	require("telescope.builtin").lsp_document_symbols({ symbols = "class" })
 end, { desc = "Find Classes" })
+
+-- Copilot
+map(
+	"i",
+	"<C-J>",
+	'copilot#Accept("<CR>")',
+	{ desc = "Copilot Accept Suggestion", silent = true, expr = true, replace_keycodes = false }
+)
+map(
+	"i",
+	"<C-]>",
+	"copilot#Next()",
+	{ desc = "Copilot Next Suggestion", silent = true, expr = true, replace_keycodes = false }
+)
+map(
+	"i",
+	"<C-[>",
+	"copilot#Previous()",
+	{ desc = "Copilot Prev Suggestion", silent = true, expr = true, replace_keycodes = false }
+)
