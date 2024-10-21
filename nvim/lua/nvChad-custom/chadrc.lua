@@ -5,7 +5,7 @@ local M = {}
 local highlights = require("configs.highlights")
 
 M.base46 = {
-	theme = "onedark",
+	theme = "gruvbox",
 	theme_toggle = { "gruvbox", "gruvbox_light" },
 	transparency = false,
 	hl_override = highlights.override,
