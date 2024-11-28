@@ -19,6 +19,9 @@ map("n", "<leader>j", "<C-w>j")
 map("n", "<leader>k", "<C-w>k")
 map("n", "<leader>l", "<C-w>l")
 
+-- Diagnostic
+map("n", "<leader>k", "<cmd>lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true })
+
 -- Alteratives for Changing Buffers
 map("n", "<leader><tab>", function()
 	require("nvchad.tabufline").next()
