@@ -42,14 +42,15 @@ M.nvdash = {
 		"                            ",
 	},
 
-	buttons = {
-		{ txt = "  Find File", keys = "<leader> ff", cmd = "Telescope find_files" },
-		{ txt = "󰈚  Recent Files", keys = "<leader> fo", cmd = "Telescope oldfiles" },
-		{ txt = "󰈭  Find Word", keys = "<leader> fw", cmd = "Telescope live_grep" },
-		{ txt = "  Bookmarks", keys = "<leader> ma", cmd = "Telescope marks" },
-		{ txt = "  Themes", keys = "<leader> th", cmd = "Telescope themes" },
-		{ txt = "  Mappings", keys = "<leader> ch", cmd = "NvCheatsheet" },
-	},
+	-- Optional: Buttons for the dashboard. (Customizing does not show loaded plugins)
+	-- buttons = {
+	-- 	{ txt = "  Find File", keys = "<leader> ff", cmd = "Telescope find_files" },
+	-- 	{ txt = "󰈚  Recent Files", keys = "<leader> fo", cmd = "Telescope oldfiles" },
+	-- 	{ txt = "󰈭  Find Word", keys = "<leader> fw", cmd = "Telescope live_grep" },
+	-- 	{ txt = "  Bookmarks", keys = "<leader> ma", cmd = "Telescope marks" },
+	-- 	{ txt = "  Themes", keys = "<leader> th", cmd = "Telescope themes" },
+	-- 	{ txt = "  Mappings", keys = "<leader> ch", cmd = "NvCheatsheet" },
+	-- },
 }
 
 M.term = {
