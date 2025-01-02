@@ -1,5 +1,5 @@
 # list of packages separated by spaces
-PACKAGES="git neovim tmux ranger lazygit github-cli glibc linux-api-headers"
+PACKAGES="git zoxide neovim tmux ranger lazygit github-cli"
 
 echo -n "Checking permissions: "
 if [ "$(id -ru)" == "0" ]; then
@@ -19,6 +19,9 @@ if [ ! -e "/etc/pacman.d/gnupg/trustdb.gpg" ]; then
     pacman-key --init
     pacman-key --populate archlinux
 fi
+
+echo "Installing C compilers"
+pacman -Sy --noconfirm gcc base-devel glibc linux-api-headers
 
 echo "Installing package"
 pacman -Sy --noconfirm $PACKAGES
