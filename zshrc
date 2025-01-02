@@ -106,6 +106,8 @@ else
   export EDITOR='nvim'
 fi
 
+export PATH="$PATH:/opt/nvim-linux64/bin" 
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
