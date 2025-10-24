@@ -9,7 +9,7 @@ sudo ./install.sh
 
 ## Known Issues
 
-May come accros errors with the PGP signatures getting corrupted or invalid. If so can fix by clearing of pacman cache and re-initialize the pacman keys.
+May come across errors with the PGP signatures getting corrupted or invalid. If so can fix by clearing of pacman cache and re-initialize the pacman keys.
 
 
 1. Disable readonly
