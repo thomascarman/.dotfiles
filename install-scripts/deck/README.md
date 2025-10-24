@@ -11,6 +11,18 @@ sudo ./install.sh
 
 May come across errors with the PGP signatures getting corrupted or invalid. If so can fix by clearing of pacman cache and re-initialize the pacman keys.
 
+## Fixes
+
+Getting errors like pgp signatures invalid or corrupted... refresh pacman keys
+```bash
+sudo pacman-key --refresh-keys
+
+sudo pacman-key --populate archlinux
+sudo pacman-key --populate holo
+
+sudo pacman -Scc
+```
+
 
 1. Disable readonly
 ```bash
